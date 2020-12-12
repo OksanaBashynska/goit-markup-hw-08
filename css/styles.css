@@ -22,7 +22,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -34,9 +34,17 @@ ul {
 }
 a {
   text-decoration: none;
+  color: var(--title-text-color);
+}
+button {
+  font-family: inherit;
+}
+.current-link {
+  color: var(--accent-color);
 }
 
 /*Шапка*/
+
 .page-header {
   font-weight: 500;
   line-height: 1.14;
@@ -44,29 +52,40 @@ a {
   color: var(--title-text-color);
 }
 .page-header :hover,
-:focus {
+.page-header :focus {
   color: var(--accent-color);
 }
 .logo-top {
   font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
   color: #000000;
 }
 .logoWeb {
   color: #2196f3;
 }
+.page-contacts-top-link {
+  color: var(--primary-text-color);
+}
 
 /*Основной контент*/
 /*секция1 заказать услугу*/
 .order {
+  background-color: var(--sec-background-color);
+}
+.order-title {
   color: var(--white-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  background-color: var(--sec-background-color);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 .order-button {
   color: var(--white-text-color);
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   background-color: var(--accent-color);
@@ -82,20 +101,18 @@ a {
 .team-title,
 .work-title {
   color: var(--title-text-color);
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .benefits-item,
 .team-item,
 .work-item {
   color: var(--title-text-color);
-  font-weight: 700px;
+  font-weight: 700;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
@@ -106,7 +123,6 @@ a {
 .work-content {
   font-size: 16px;
   line-height: 1.18;
-  letter-spacing: 0.03em;
 }
 
 .work-content {
@@ -119,7 +135,6 @@ a {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
   background-color: var(--add-background-color);
 }
 
@@ -134,21 +149,24 @@ a {
 footer {
   color: var(--white-text-color);
   line-height: 1.71;
-  letter-spacing: 0.03em;
   background-color: var(--sec-background-color);
 }
 .logo-footer {
   font-family: "Raleway", sans-serif;
-  color: #ffffff;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--white-text-color);
 }
 address {
   text-decoration: none;
   font-style: normal;
 }
-.page-contacts-footer {
-  color: rgba(255, 255, 255, 0.6);
-}
+
 .page-contacts-footer :hover,
-:focus {
+.page-contacts-footer :focus {
   color: var(--accent-color);
+}
+.page-contacts-footer-link {
+  color: rgba(255, 255, 255, 0.6);
 }
