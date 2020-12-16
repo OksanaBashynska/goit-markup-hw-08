@@ -1,3 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 /*цвет текста 
 основной #212121 
 вторичный #757575
@@ -14,10 +23,18 @@
   --title-text-color: #212121;
   --white-text-color: #ffffff;
   --accent-color: #2196f3;
+  --footer-color: rgba(255, 255, 255, 0.6);
 
   --main-background-color: #ffffff;
   --sec-background-color: #2f303a;
   --add-background-color: #f5f4fa;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 body {
@@ -29,16 +46,39 @@ body {
   color: var(--primary-text-color);
   background-color: var(--main-background-color);
 }
+
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+
 ul {
   list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
+
 a {
   text-decoration: none;
   color: var(--title-text-color);
 }
+
 button {
   font-family: inherit;
 }
+
+footer {
+  color: var(--white-text-color);
+  line-height: 1.71;
+  background-color: var(--sec-background-color);
+}
+
+address {
+  text-decoration: none;
+  font-style: normal;
+}
+
 .current-link {
   color: var(--accent-color);
 }
@@ -50,38 +90,77 @@ button {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+
+  display: flex;
+  justify-content: space-between;
+
+  outline: 1px solid #757575;
 }
 .page-header :hover,
 .page-header :focus {
   color: var(--accent-color);
 }
+
+.nav {
+  display: flex;
+}
+
 .logo-top {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--title-text-color);
+
+  margin-top: 24px;
+  margin-bottom: 25px;
+  margin-right: 93px;
 }
+
 .logoWeb {
   color: var(--accent-color);
 }
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav-link {
+  margin-right: 50px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.page-contacts-top {
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
 .page-contacts-top-link {
   color: var(--primary-text-color);
+
+  margin-left: 50px;
 }
 
 /*Основной контент*/
 /*секция1 заказать услугу*/
 .order {
   background-color: var(--sec-background-color);
+
+  padding: 200px;
+  text-align: center;
 }
 .order-title {
   color: var(--white-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  width: 696px;
+  margin: auto;
 }
 .order-button {
   color: var(--white-text-color);
@@ -89,6 +168,10 @@ button {
   font-size: 16px;
   line-height: 1.87;
   background-color: var(--accent-color);
+
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
 }
 .order-button:hover,
 .order-button:focus {
@@ -96,6 +179,22 @@ button {
 }
 
 /*секция 2, 3, 4, 5*/
+.visually-hidden {
+  position: absolute;
+  clip: rect (0000);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  opacity: 0;
+}
+
+.benefits {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  outline: 1px solid #757575;
+}
+
 .benefits-title,
 .offer-title,
 .team-title,
@@ -146,11 +245,6 @@ button {
 
 /*Футер*/
 
-footer {
-  color: var(--white-text-color);
-  line-height: 1.71;
-  background-color: var(--sec-background-color);
-}
 .logo-footer {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -158,15 +252,11 @@ footer {
   line-height: 1.19;
   color: var(--white-text-color);
 }
-address {
-  text-decoration: none;
-  font-style: normal;
-}
 
 .page-contacts-footer :hover,
 .page-contacts-footer :focus {
   color: var(--accent-color);
 }
 .page-contacts-footer-link {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-color);
 }
