@@ -83,6 +83,10 @@ footer {
 address {
   text-decoration: none;
   font-style: normal;
+
+  display: block;
+  margin-bottom: 9px;
+}
 }
 
 .current-link {
@@ -99,8 +103,6 @@ address {
 
   display: flex;
   justify-content: space-between;
-
-  outline: 1px solid #757575;
 }
 .page-header :hover,
 .page-header :focus {
@@ -205,8 +207,6 @@ address {
 .benefits {
   padding-top: 94px;
   padding-bottom: 94px;
-
-  outline: 1px solid #757575;
 }
 
 .benefits-list {
@@ -257,6 +257,18 @@ address {
   background-color: var(--main-background-color);
 }
 
+.work-item {
+  width: 332px;
+  height: 36px;
+  margin-top: 20px;
+  margin-left: 24px;
+}
+
+.work-content {
+  margin-top: 4px;
+  margin-bottom: 20px;
+  margin-left: 24px;
+}
 .team {
   background-color: var(--add-background-color);
 
@@ -287,6 +299,7 @@ address {
 }
 .team-content,
 .work-content {
+  color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.18;
 
@@ -294,10 +307,16 @@ address {
   background-color: var(--main-background-color);
 }
 
-.work-content {
-  line-height: 1.87;
+.all-works {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
+.works-button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
 .works-button {
   color: var(--title-text-color);
   font-weight: 500;
@@ -305,6 +324,15 @@ address {
   line-height: 1.62;
   text-align: center;
   background-color: var(--add-background-color);
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+  margin-right: 8px;
+
+  cursor: pointer;
+}
+.works-button :last-child {
+  margin-right: 0px ;
 }
 
 .works-button:hover,
@@ -313,21 +341,12 @@ address {
   background-color: var(--accent-color);
 }
 
-.all-works {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.works-button-list {
-  display: flex;
-}
-
 .works-list {
   display: flex;
   flex-wrap: wrap;
 }
-
 .works-list-item {
-  width: 370px;
+  width: calc((100% - 60) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -338,6 +357,10 @@ address {
   margin-bottom: 0px;
 }
 
+.work-img {
+  display: block;
+}
+
 /*Футер*/
 
 .logo-footer {
@@ -346,6 +369,9 @@ address {
   font-size: 26px;
   line-height: 1.19;
   color: var(--white-text-color);
+
+  display: block;
+  margin-bottom: 30px;
 }
 
 .page-contacts-footer :hover,
@@ -354,4 +380,10 @@ address {
 }
 .page-contacts-footer-link {
   color: var(--footer-color);
+
+  display: block;
+  margin-bottom: 9px;
+}
+.page-contacts-footer-link :last-child {
+  margin-bottom: 0px;
 }
