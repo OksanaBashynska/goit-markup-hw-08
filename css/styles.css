@@ -59,9 +59,18 @@ ul {
   padding: 0px;
 }
 
+.current-link {
+  display: block;
+  color: var(--accent-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 a {
   text-decoration: none;
   color: var(--title-text-color);
+  display: block;
+  margin: 0;
 }
 
 p {
@@ -87,10 +96,8 @@ address {
   display: block;
   margin-bottom: 9px;
 }
-}
-
-.current-link {
-  color: var(--accent-color);
+header {
+  display: flex;
 }
 
 /*Шапка*/
@@ -101,7 +108,6 @@ address {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 
-  display: flex;
   justify-content: space-between;
 }
 .page-header :hover,
@@ -124,28 +130,29 @@ address {
 
   margin-right: 93px;
 }
-
 .logoWeb {
   color: var(--accent-color);
 }
 
-.site-nav {
+.nav-list {
   display: flex;
 }
-.site-nav :last-child {
+.nav-list :last-child {
   margin-right: 0px;
 }
 
 .site-nav-link {
+  margin-right: 50px;
+}
+
+.site-nav-content {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  margin-right: 50px;
 }
 
 .page-contacts-top {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .page-contacts-top-link :last-child {
   margin-left: 0px;
@@ -162,8 +169,6 @@ address {
 /*секция1 заказать услугу*/
 .order {
   background-color: var(--sec-background-color);
-
-  padding: 200px;
   text-align: center;
 }
 .order-title {
@@ -173,9 +178,6 @@ address {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
-  width: 696px;
-  margin: auto;
 }
 .order-button {
   color: var(--white-text-color);
@@ -192,6 +194,14 @@ address {
 .order-button:hover,
 .order-button:focus {
   color: var(--white-text-color);
+}
+
+.main-title {
+  display: block;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  width: 696px;
+  margin: auto;
 }
 
 /*секция 2, 3, 4, 5*/
@@ -225,6 +235,10 @@ address {
   margin-right: 30px;
 }
 
+.offer {
+  padding-bottom: 94px;
+}
+
 .benefits-title,
 .offer-title,
 .team-title,
@@ -237,13 +251,16 @@ address {
 }
 .offer-list {
   display: flex;
-  margin-bottom: 94px;
 }
 .offer-title {
   margin-bottom: 50px;
 }
+
 .offer-list-link:not(:last-child) {
   margin-right: 30px;
+}
+.offer-img {
+  display: block;
 }
 
 .team-item,
@@ -251,24 +268,14 @@ address {
   color: var(--title-text-color);
   font-weight: 700;
   line-height: 1.14;
-  text-transform: uppercase;
-
-  display: block;
-  background-color: var(--main-background-color);
 }
-
+.team-item {
+  margin-bottom: 10px;
+}
 .work-item {
-  width: 332px;
-  height: 36px;
-  margin-top: 20px;
-  margin-left: 24px;
+  text-transform: uppercase;
 }
 
-.work-content {
-  margin-top: 4px;
-  margin-bottom: 20px;
-  margin-left: 24px;
-}
 .team {
   background-color: var(--add-background-color);
 
@@ -285,15 +292,15 @@ address {
 .team-img {
   display: block;
 }
-.team-item {
-  padding-top: 30px;
-  padding-bottom: 10px;
-  text-align: center;
-}
+
 .team-list-item:not(:last-child) {
   margin-right: 30px;
 }
-.team-content {
+
+.team-card {
+  display: block;
+  background-color: var(--main-background-color);
+  padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
 }
@@ -302,9 +309,6 @@ address {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.18;
-
-  display: block;
-  background-color: var(--main-background-color);
 }
 
 .all-works {
@@ -327,12 +331,15 @@ address {
   border: none;
   border-radius: 4px;
   padding: 6px 22px;
-  margin-right: 8px;
 
   cursor: pointer;
 }
-.works-button :last-child {
-  margin-right: 0px ;
+
+.works-button-item {
+  margin-right: 8px;
+}
+.works-button-item:last-child {
+  margin-right: 0px;
 }
 
 .works-button:hover,
@@ -360,6 +367,18 @@ address {
 .work-img {
   display: block;
 }
+.works-card {
+  display: block;
+  padding: 20px 24px;
+}
+.work-item,
+.work-content {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.work-item {
+  margin-bottom: 4px;
+}
 
 /*Футер*/
 
@@ -378,12 +397,13 @@ address {
 .page-contacts-footer :focus {
   color: var(--accent-color);
 }
+
 .page-contacts-footer-link {
   color: var(--footer-color);
 
   display: block;
   margin-bottom: 9px;
 }
-.page-contacts-footer-link :last-child {
+.page-contacts-footer-link:last-child {
   margin-bottom: 0px;
 }
