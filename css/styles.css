@@ -96,9 +96,6 @@ address {
   display: block;
   margin-bottom: 9px;
 }
-header {
-  display: flex;
-}
 
 /*Шапка*/
 
@@ -108,6 +105,7 @@ header {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 
+  display: flex;
   justify-content: space-between;
 }
 .page-header :hover,
@@ -151,16 +149,21 @@ header {
   padding-bottom: 32px;
 }
 
-.page-contacts-top {
+.contacts-top {
   display: flex;
 }
-.page-contacts-top-link :last-child {
-  margin-left: 0px;
+
+.contacts-top-item {
+  display: block;
+  margin-left: 50px;
 }
-.page-contacts-top-link {
+.contacts-top-item:first-child {
+  margin-left: 0;
+}
+
+.contacts-top-link {
   color: var(--primary-text-color);
 
-  margin-left: 50px;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -170,6 +173,9 @@ header {
 .order {
   background-color: var(--sec-background-color);
   text-align: center;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .order-title {
   color: var(--white-text-color);
@@ -198,8 +204,6 @@ header {
 
 .main-title {
   display: block;
-  padding-top: 200px;
-  padding-bottom: 200px;
   width: 696px;
   margin: auto;
 }
@@ -311,7 +315,7 @@ header {
   line-height: 1.18;
 }
 
-.all-works {
+.works {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -370,14 +374,10 @@ header {
 .works-card {
   display: block;
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
-.work-item,
-.work-content {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.work-item {
-  margin-bottom: 4px;
+.work-list-title {
+  margin-bottom: 24px;
 }
 
 /*Футер*/
@@ -393,17 +393,20 @@ header {
   margin-bottom: 30px;
 }
 
-.page-contacts-footer :hover,
-.page-contacts-footer :focus {
+.contacts-footer :hover,
+.contacts-footer :focus {
   color: var(--accent-color);
 }
 
-.page-contacts-footer-link {
+.link {
   color: var(--footer-color);
+}
 
+.item {
   display: block;
   margin-bottom: 9px;
 }
-.page-contacts-footer-link:last-child {
+
+.item:last-child {
   margin-bottom: 0px;
 }
