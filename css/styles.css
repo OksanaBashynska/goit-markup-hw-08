@@ -171,11 +171,23 @@ address {
 /*Основной контент*/
 /*секция1 заказать услугу*/
 .order {
-  background-color: var(--sec-background-color);
+  background-color: #c4c4c4;
   text-align: center;
-
+  padding: 0;
+}
+.overlay {
+  max-width: 2000px;
+  height: 600px;
   padding-top: 200px;
-  padding-bottom: 200px;
+  margin: 0 auto;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4) 0%,
+      rgba(47, 48, 58, 0.4) 10%
+    ),
+    url(../images/header-background-img.jpg);
+  background-position: center;
 }
 .order-title {
   color: var(--white-text-color);
@@ -191,10 +203,12 @@ address {
   font-size: 16px;
   line-height: 1.87;
   background-color: var(--accent-color);
-  radius: 4px;
 
   width: 200px;
   height: 50px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   margin-top: 30px;
 }
 .order-button:hover,
@@ -226,26 +240,46 @@ address {
 .benefits-list {
   display: flex;
 }
+.benefits-list-item::before {
+  display: block;
+  margin-bottom: 30px;
+  content: "";
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+}
+.antena::before {
+  background-image: url(../images/antenna.svg);
+}
+.clock::before {
+  background-image: url(../images/clock.svg);
+}
+.diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+.astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
+
 .benefits-item {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-
   margin-bottom: 10px;
 }
 .benefits-list-item:not(:last-child) {
   margin-right: 30px;
 }
-
 .offer {
   padding-bottom: 94px;
 }
-
 .benefits-title,
 .offer-title,
 .team-title,
+.clients-title,
 .work-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -259,14 +293,12 @@ address {
 .offer-title {
   margin-bottom: 50px;
 }
-
 .offer-list-link:not(:last-child) {
   margin-right: 30px;
 }
 .offer-img {
   display: block;
 }
-
 .team-item,
 .work-item {
   color: var(--title-text-color);
@@ -279,10 +311,8 @@ address {
 .work-item {
   text-transform: uppercase;
 }
-
 .team {
   background-color: var(--add-background-color);
-
   display: block;
   padding-top: 94px;
   padding-bottom: 94px;
@@ -296,11 +326,9 @@ address {
 .team-img {
   display: block;
 }
-
 .team-list-item:not(:last-child) {
   margin-right: 30px;
 }
-
 .team-card {
   display: block;
   background-color: var(--main-background-color);
@@ -315,11 +343,11 @@ address {
   line-height: 1.18;
 }
 
+.clients,
 .works {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 .works-button-list {
   display: flex;
   justify-content: center;
@@ -335,23 +363,19 @@ address {
   border: none;
   border-radius: 4px;
   padding: 6px 22px;
-
   cursor: pointer;
 }
-
 .works-button-item {
   margin-right: 8px;
 }
 .works-button-item:last-child {
   margin-right: 0px;
 }
-
 .works-button:hover,
 .works-button:focus {
   color: var(--white-text-color);
   background-color: var(--accent-color);
 }
-
 .works-list {
   display: flex;
   flex-wrap: wrap;
@@ -367,7 +391,6 @@ address {
 .works-list-item:nth-last-child(-n + 3) {
   margin-bottom: 0px;
 }
-
 .work-img {
   display: block;
 }
@@ -379,34 +402,26 @@ address {
 .work-list-title {
   margin-bottom: 24px;
 }
-
-/*Футер*/
-
-.logo-footer {
+margin- .logo-footer {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--white-text-color);
-
   display: block;
   margin-bottom: 30px;
 }
-
 .contacts-footer :hover,
 .contacts-footer :focus {
   color: var(--accent-color);
 }
-
 .link {
   color: var(--footer-color);
 }
-
 .item {
   display: block;
   margin-bottom: 9px;
 }
-
 .item:last-child {
   margin-bottom: 0px;
 }
