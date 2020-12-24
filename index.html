@@ -43,13 +43,17 @@
 
           <ul class="contacts-top">
             <li class="contacts-top-item"> 
-              <a href="mailto:info@devstudio.com" class="contacts-top-link mail"
-                >info@devstudio.com</a
+              <a href="mailto:info@devstudio.com" class="contacts-top-link mail">
+                 <svg class="email-icon"> 
+                   <use href="./images/symbol-defs2.svg#icon-email-icon"> </use> 
+                  </svg> info@devstudio.com</a
               >
             </li>
             <li class="contacts-top-item">
               <a href="tel:+380961111111" class="contacts-top-link phone"
-                >+38 096 111 11 11</a
+                ><svg class="phone-icon"> 
+                   <use href="./images/symbol-defs2.svg#icon-phone-icon"> </use> 
+                  </svg> +38 096 111 11 11</a
               >
             </li>
           </ul>
@@ -219,34 +223,34 @@
           <h2 class="clients-title">Постоянные клиенты</h2>
           <ul class="clients-list">
             <li class="clients-list-item">
-              <svg class="clients-logo" width="44px" height="49px"> 
+              <a class="clients-link"><svg class="clients-logo" width="44px" height="49px"> 
                 <use href="./images/symbol-defs2.svg#icon-client-logo1"></use>
-              </svg>
+              </svg></a>
             </li>
             <li class="clients-list-item">
-              <svg class="clients-logo" width="40px" height="52px">
+              <a class="clients-link"><svg class="clients-logo" width="40px" height="52px">
                 <use href="./images/symbol-defs2.svg#icon-client-logo2"></use>
-              </svg>
+              </svg></a>
             </li>
             <li class="clients-list-item">
-              <svg class="clients-logo" width="41px" height="43px">
+              <a class="clients-link"><svg class="clients-logo" width="41px" height="43px">
                 <use href="./images/symbol-defs2.svg#icon-client-logo3"></use>
-              </svg>
+              </svg></a>
             </li>
             <li class="clients-list-item">
-              <svg class="clients-logo" width="80px" height="42px">
+              <a class="clients-link"><svg class="clients-logo" width="80px" height="42px">
                 <use href="./images/symbol-defs2.svg#icon-client-logo4"></use>
-              </svg>
+              </svg></a>
             </li>
             <li class="clients-list-item">
-              <svg class="clients-logo" width="59px" height="47px">
+              <a class="clients-link"><svg class="clients-logo" width="59px" height="47px">
                 <use href="./images/symbol-defs2.svg#icon-client-logo5"></use>
-              </svg>
+              </svg></a>
             </li>
             <li class="clients-list-item">
-              <svg class="clients-logo" width="89px" height="46px">
+              <a class="clients-link"><svg class="clients-logo" width="89px" height="46px">
                 <use href="./images/symbol-defs2.svg#icon-client-logo6"></use>
-              </svg>
+              </svg></a>
             </li>
           </ul>
         </div>
@@ -256,11 +260,13 @@
     <!--Футер-->
     <footer>
       <div class="container">
-        <a href="" class="logo-footer"
-          ><span class="logoWeb">Web</span>Studio</a
-        >
-        <address>г. Киев, пр-т Леси Украинки, 26</address>
-        <ul class="contacts-footer">
+        <div class="footer-conteiner">
+        <div class="footer-block">
+         <a href="" class="logo-footer"
+           ><span class="logoWeb">Web</span>Studio</a
+          >
+         <address>г. Киев, пр-т Леси Украинки, 26</address>
+         <ul class="contacts-footer">
           <li class="contacts-footer item">
             <a
               href="mailto:info@devstudio.com"
@@ -273,25 +279,28 @@
               >+38 096 111 11 11</a
             >
           </li>
-        </ul>
-        <p>присоединяйтесь</p>
-        <ul class="footer-media">
-          <li class="footer-media item">
-            <svg> <use href="./images/symbol-defs2.svg#icon-footer-instagram"></use></svg>
-          </li>
-          <li class="footer-media item">
-            <svg> <use href="./images/symbol-defs2.svg#icon-footer-twitter"></use></svg>
-          </li>
-          <li class="footer-media item">
-            <svg> <use href="./images/symbol-defs2.svg#icon-footer--facebook"></use></svg>
-          </li>
-          <li class="footer-media item">
-            <svg> <use href="./images/symbol-defs2.svg#icon-footer-linkedin"></use></svg>
-          </li>
-        </ul>
+         </ul>
+        </div>
 
+        <div class="footer-block">
+         <p class="join-us">присоединяйтесь</p>
+         <ul class="footer-media">
+           <li class="footer-media-item">
+             <a class="footer-media-link" href=""><svg class="footer-media-svg"> <use href="./images/symbol-defs2.svg#icon-footer-instagram"></use></svg></a>
+           </li>
+           <li class="footer-media-item">
+            <a class="footer-media-link" href=""><svg class="footer-media-svg"> <use href="./images/symbol-defs2.svg#icon-footer-twitter"></use></svg></a>
+           </li>
+           <li class="footer-media-item">
+            <a class="footer-media-link" href=""><svg class="footer-media-svg"> <use href="./images/symbol-defs2.svg#icon-footer--facebook"></use></svg></a>
+           </li>
+           <li class="footer-media-item">
+            <a class="footer-media-link" href=""><svg class="footer-media-svg"> <use href="./images/symbol-defs2.svg#icon-footer-linkedin"></use></svg></a>
+           </li>
+          </ul>
+        </div>
+        </div>
       </div>
-
     </footer>
   </body>
 </html>
