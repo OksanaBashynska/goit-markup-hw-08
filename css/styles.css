@@ -108,7 +108,9 @@ address {
   display: flex;
   justify-content: space-between;
 }
-
+.header-container {
+  border: 1px solid #ececec;
+}
 .nav,
 .page-contacts-top {
   display: flex;
@@ -150,6 +152,7 @@ address {
 
 .contacts-top {
   display: flex;
+  align-items: center;
 }
 
 .contacts-top-item {
@@ -173,14 +176,14 @@ address {
 }
 
 .email-icon {
-  width: 20px;
-  height: 16px;
+  width: 16px;
+  height: 12px;
   margin-right: 10px;
   fill: currentColor;
 }
 .phone-icon {
-  width: 15px;
-  height: 22px;
+  width: 10px;
+  height: 16px;
   margin-right: 10px;
   fill: currentColor;
 }
@@ -475,7 +478,7 @@ address {
   flex-wrap: wrap;
 }
 .works-list-item {
-  width: calc((100% - 60) / 3);
+  width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -493,14 +496,15 @@ address {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
-.works-list-item:hover,
-.works-list-item:focus {
+.works-list-link:hover,
+.works-list-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .work-list-title {
   margin-bottom: 24px;
 }
+
 .logo-footer {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -524,6 +528,7 @@ address {
 .item:last-child {
   margin-bottom: 0px;
 }
+
 .footer-media {
   display: flex;
 }
@@ -558,5 +563,6 @@ address {
 }
 .join-us {
   text-transform: uppercase;
+  font-weight: 700;
   margin-bottom: 20px;
 }
