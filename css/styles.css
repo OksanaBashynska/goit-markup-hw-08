@@ -260,14 +260,6 @@ address {
   display: flex;
 }
 
-.contacts-top-link::before {
-  display: inline-block;
-  content: "";
-
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .benefits-list-item::before {
   display: block;
   margin-bottom: 30px;
