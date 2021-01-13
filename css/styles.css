@@ -44,6 +44,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+
   background-color: var(--main-background-color);
 }
 
@@ -54,23 +55,26 @@ h3 {
 }
 
 ul {
-  list-style: none;
   margin: 0px;
   padding: 0px;
+
+  list-style: none;
 }
 
 .current-link {
   display: block;
-  color: var(--accent-color);
   padding-top: 32px;
   padding-bottom: 32px;
+
+  color: var(--accent-color);
 }
 
 a {
-  text-decoration: none;
-  color: var(--title-text-color);
   display: block;
   margin: 0;
+
+  text-decoration: none;
+  color: var(--title-text-color);
 }
 
 p {
@@ -81,35 +85,36 @@ button {
 }
 
 footer {
-  color: var(--white-text-color);
-  line-height: 1.71;
-  background-color: var(--sec-background-color);
-
   padding-top: 60px;
   padding-bottom: 60px;
+
+  line-height: 1.71;
+  color: var(--white-text-color);
+  background-color: var(--sec-background-color);
 }
 
 address {
-  text-decoration: none;
-  font-style: normal;
-
   display: block;
   margin-bottom: 9px;
+
+  font-style: normal;
+  text-decoration: none;
 }
 
 /*Шапка*/
 
 .page-header {
+  display: flex;
+  justify-content: space-between;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
-
-  display: flex;
-  justify-content: space-between;
 }
+
 .header-container {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .nav,
 .page-contacts-top {
@@ -118,13 +123,13 @@ address {
 }
 
 .logo-top {
+  margin-right: 93px;
+
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--title-text-color);
-
-  margin-right: 93px;
 }
 .logoWeb {
   color: var(--accent-color);
@@ -167,12 +172,13 @@ address {
   color: var(--accent-color);
 }
 .contacts-top-link {
-  color: var(--primary-text-color);
   display: inline-flex;
   padding-top: 32px;
   padding-bottom: 32px;
   justify-content: center;
+
   align-items: center;
+  color: var(--primary-text-color);
 }
 
 .email-icon {
@@ -209,26 +215,26 @@ address {
   background-size: cover;
 }
 .order-title {
-  color: var(--white-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: var(--white-text-color);
 }
 .order-button {
-  color: var(--white-text-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  background-color: var(--accent-color);
-
   width: 200px;
   height: 50px;
   border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   margin-top: 30px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
 }
 .order-button:hover,
 .order-button:focus {
@@ -284,12 +290,13 @@ address {
 }
 
 .benefits-item {
-  color: var(--title-text-color);
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  color: var(--title-text-color);
 }
 .benefits-list-item:not(:last-child) {
   margin-right: 30px;
@@ -302,11 +309,11 @@ address {
 .team-title,
 .clients-title,
 .work-title {
-  color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  color: var(--title-text-color);
 }
 .offer-list {
   display: flex;
@@ -322,9 +329,9 @@ address {
 }
 .team-item,
 .work-item {
-  color: var(--title-text-color);
   font-weight: 700;
   line-height: 1.14;
+  color: var(--title-text-color);
 }
 .team-item {
   margin-bottom: 10px;
@@ -333,10 +340,11 @@ address {
   text-transform: uppercase;
 }
 .team {
-  background-color: var(--add-background-color);
   display: block;
   padding-top: 94px;
   padding-bottom: 94px;
+
+  background-color: var(--add-background-color);
 }
 .team-title {
   margin-bottom: 50px;
@@ -358,10 +366,11 @@ address {
 }
 .team-card {
   display: block;
-  background-color: var(--main-background-color);
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
+
+  background-color: var(--main-background-color);
 }
 .team-media-link,
 .footer-media-link {
@@ -387,9 +396,9 @@ address {
 
 .team-content,
 .work-content {
-  color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.18;
+  color: var(--primary-text-color);
 }
 .team-content {
   margin-bottom: 16px;
@@ -408,15 +417,15 @@ address {
 }
 
 .clients-link {
-  display: block;
-  border: 1px solid #afb1b8;
-  fill: #afb1b8;
-  width: 170px;
-  height: 90px;
-  border-radius: 4px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
 }
 
 .clients-link:hover,
@@ -443,15 +452,17 @@ address {
   margin-bottom: 34px;
 }
 .works-button {
-  color: var(--title-text-color);
+  padding: 6px 22px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+  color: var(--title-text-color);
+
   background-color: var(--add-background-color);
   border: none;
   border-radius: 4px;
-  padding: 6px 22px;
   cursor: pointer;
 }
 .works-button-item {
@@ -498,13 +509,14 @@ address {
 }
 
 .logo-footer {
+  display: block;
+  margin-bottom: 20px;
+
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--white-text-color);
-  display: block;
-  margin-bottom: 30px;
 }
 .contacts-footer :hover,
 .contacts-footer :focus {
@@ -545,6 +557,8 @@ address {
 }
 .footer-conteiner {
   display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
 }
 .footer-block {
   display: block;
