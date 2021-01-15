@@ -29,12 +29,12 @@
                 <a href="./index.html" class="current-link">Студия</a>
               </li>
               <li class="site-nav-link">
-                <a class="site-nav-content" href="./portfolio.html"
+                <a href="./portfolio.html" class="site-nav-content"
                   >Портфолио</a
                 >
               </li>
               <li class="site-nav-link">
-                <a class="site-nav-content" href="">Контакты</a>
+                <a href="" class="site-nav-content">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -71,7 +71,9 @@
         <div class="overlay">
           <div class="main-title">
             <h1 class="order-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="order-button">Заказать услугу</button>
+            <button type="button" class="order-button" data-modal-open>
+              Заказать услугу
+            </button>
           </div>
         </div>
       </section>
@@ -127,6 +129,7 @@
                 alt="Человек печатает на компьютере с планшета"
                 width="370"
               />
+              <p class="offer-text">Десктопные приложения</p>
             </li>
             <li class="offer-list-link">
               <img
@@ -135,6 +138,7 @@
                 alt="Человек печатает на компьютере и смотрит в телефон"
                 width="370"
               />
+              <p class="offer-text">Мобильные приложения</p>
             </li>
             <li class="offer-list-link">
               <img
@@ -143,6 +147,7 @@
                 alt="Человек выбирает цветовую гамму на планшете"
                 width="370"
               />
+              <p class="offer-text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -436,5 +441,13 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <div class="close" data-modal-close>&#10006;</div>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
