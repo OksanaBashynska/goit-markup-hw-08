@@ -438,13 +438,56 @@
               </li>
             </ul>
           </div>
+          <div class="footer-block">
+            <form class="forn-subscribe">
+             <p class="subscribe-us">подпишитесь на рассылку</p>
+             <label name="footer-mail" class="footer-label">
+               <input type="email" name="footer-mail" class="footer-input" placeholder="E-mail">
+               <button type="submit" class="footer-button">Подписаться</button>
+             </label> 
+            </form>
+          </div>
         </div>
       </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <div class="close" data-modal-close>&#10006;</div>
+      <div class="modal-container"></div>
+        <div class="modal">
+          <div class="close-icon" data-modal-close>&#10006;</div>
+          <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+          <form class="form-contact-us" autocomplete="off">
+            <label class="form-field">Имя
+              <input type="text" name="name" class="input" />
+              <svg class="form-icons" width="18px" height="18px"><use href="./images/form-defs2.svg#form-icon-name"></use></svg>
+              </label>
+            <label class="form-field"
+              >Телефон
+              <input type="tel" name="telephone" class="input" />
+              <svg class="form-icons" width="18px" height="18px"><use href="./images/form-defs2.svg#form-icon-phone"></use></svg>
+            </label>
+            <label class="form-field"
+              >Почта
+              <input type="email" name="email" class="input" />
+              <svg class="form-icons" width="18px" height="18px"><use href="./images/form-defs2.svg#form-icon-email"></use></svg>
+            </label>
+            <label class="form-field"
+              >Комментарий
+              <textarea
+                name="comments"
+                rows="7"
+                placeholder="Введите текст"
+                class="textarea-input"
+              ></textarea>
+            </label>
+            <label class="form-field">
+              <input type="checkbox" name="checkbox" class="input checkbox" />
+              <span class="checkbox-icon"></span>
+              Соглашаюсь с рассылкой и принимаю <a href="" class="form-link">Условия договора</a>
+            </label>
+            <button type="submit" class="form-button">Отправить</button>
+          </form>
+        </div>
       </div>
     </div>
 
