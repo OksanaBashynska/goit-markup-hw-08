@@ -424,11 +424,6 @@ textarea:hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field > .checkbox {
-  width: 16px;
-  margin-right: 8px;
-}
-
 .form-link {
   margin-left: 4px;
   color: var(--accent-color);
@@ -437,8 +432,10 @@ textarea:hover {
 
 .checkbox-icon {
   position: absolute;
-  top: 3px;
+  top: 50%;
   left: 0;
+  transform: translateY(-50%);
+
   width: 16px;
   height: 15px;
   border: 2px solid var(--title-text-color);
@@ -448,13 +445,19 @@ textarea:hover {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.checkbox:checked + .checkbox-icon {
+.input-checkbox:checked + .checkbox-icon {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
   background-image: url("../images/icon-check.svg");
   background-size: contain;
   background-origin: border-box;
+}
+.input-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  position: absolute;
 }
 
 .form-button {
@@ -467,6 +470,11 @@ textarea:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.form-button:hover,
+.form-button:focus {
+  cursor: pointer;
+}
+
 .main-title {
   display: block;
   width: 696px;
@@ -474,8 +482,7 @@ textarea:hover {
 }
 
 /*секция 2, 3, 4, 5*/
-.visually-hidden,
-.checkbox {
+.visually-hidden {
   position: absolute;
   clip: rect (0000);
   width: 1px;
@@ -876,7 +883,7 @@ textarea:hover {
 .footer-conteiner {
   display: flex;
   align-items: baseline;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 .footer-block {
   display: block;
@@ -919,10 +926,11 @@ textarea:hover {
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.03em;
 }
+
 .footer-button {
   position: relative;
   padding-left: 29px;
-  margin-left: 12px;
+  margin-left: 10px;
   width: 200px;
   height: 50px;
   text-align: start;
