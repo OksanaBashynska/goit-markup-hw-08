@@ -452,13 +452,6 @@ textarea:hover {
   background-size: contain;
   background-origin: border-box;
 }
-.input-checkbox {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-
-  position: absolute;
-}
 
 .form-button {
   margin: auto;
@@ -482,7 +475,8 @@ textarea:hover {
 }
 
 /*секция 2, 3, 4, 5*/
-.visually-hidden {
+.visually-hidden,
+.input-checkbox {
   position: absolute;
   clip: rect (0000);
   width: 1px;
