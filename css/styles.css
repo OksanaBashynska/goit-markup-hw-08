@@ -171,21 +171,26 @@ textarea:hover {
 
 .site-nav-link {
   margin-right: 50px;
+}
+
+.site-nav-content {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
 
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.site-nav-link :hover,
-.site-nav-link :focus {
+.site-nav-link:hover .site-nav-content,
+.site-nav-link:focus .site-nav-content,
+.site-nav-content:hover,
+.site-nav-content:focus {
   color: var(--accent-color);
 }
-.site-nav-content {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
+
 .contacts-top {
   display: flex;
   align-items: center;
@@ -198,10 +203,7 @@ textarea:hover {
 .contacts-top-item:first-child {
   margin-left: 0;
 }
-.contacts-top-item :hover,
-.contacts-top-item :focus {
-  color: var(--accent-color);
-}
+
 .contacts-top-link {
   display: inline-flex;
   padding-top: 32px;
@@ -210,6 +212,14 @@ textarea:hover {
 
   align-items: center;
   color: var(--primary-text-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts-top-item:hover .contacts-top-link,
+.contacts-top-item:focus .contacts-top-link {
+  color: var(--accent-color);
 }
 
 .email-icon {
@@ -355,23 +365,56 @@ textarea:hover {
   display: flex;
   flex-direction: column;
 }
-.form-field {
-  position: relative;
-  display: block;
-  margin-bottom: 10px;
-  align-items: center;
 
+.label-container {
+  margin-bottom: 5px;
+}
+.label-container.comments {
+  margin-bottom: 20px;
+}
+
+.icon-container {
+  position: relative;
+}
+
+.form-icons {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.label-container.mailing {
+  position: relative;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.mailing-text {
+  margin-left: 25px;
+}
+
+.form-field {
   font-size: 12px;
-  line-height: 1, 16;
+  line-height: 1.16;
   color: var(--primary-text-color);
 }
-.form-field .textarea-input::placeholder {
+
+.form-field.mailing {
   font-size: 14px;
+  line-height: 1.7;
+}
+
+.textarea-input::placeholder {
+  font-size: 12px;
   color: rgba(117, 117, 117, 0.5);
 }
 
 .input {
-  display: block;
   width: 100%;
   height: 38px;
 
@@ -393,35 +436,19 @@ textarea:hover {
   cursor: pointer;
 }
 
-.form-field .input,
+.label-container .input,
 .textarea-input {
   outline: transparent;
 }
 
 .input:focus,
 .input:hover,
-.form-field:focus .input,
-.form-field:hover .input {
+.label-container:focus .input,
+.label-container:hover .input,
+.textarea-input:focus,
+.textarea-input:hover {
   border-color: var(--accent-color);
   cursor: pointer;
-}
-
-.form-field:last-of-type {
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  margin-bottom: 30px;
-  padding-left: 25px;
-}
-
-.form-icons {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-link {
@@ -795,6 +822,9 @@ textarea:hover {
 .works-list-item:hover .work-overlay {
   transform: translateY(-100%);
 }
+.works-list-link:focus .work-overlay {
+  transform: translateY(-100%);
+}
 
 .work-img {
   display: block;
@@ -815,6 +845,7 @@ textarea:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 .work-list-title {
   margin-bottom: 24px;
 }
