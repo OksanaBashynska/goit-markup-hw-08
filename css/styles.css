@@ -1,3 +1,4 @@
+/* ---------------------------------normalize------------------------------------------- */
 html {
   box-sizing: border-box;
 }
@@ -7,6 +8,8 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+/* ---------------------------------var------------------------------------------- */
 /*цвет текста 
 основной #212121 
 вторичный #757575
@@ -30,6 +33,23 @@ html {
   --add-background-color: #f5f4fa;
 }
 
+/* $colors: (
+  'primary': #757575,
+  'secondary': #ffffff,
+  'accent': #2196f3,
+  'title': #212121,
+  'footer': rgba(255, 255, 255, 0.6),
+  
+  'main-background': #ffffff,
+  'background-dark': #2f303a,
+  'background-light': #f5f4fa,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+} */
+
+/* ---------------------------------normalize------------------------------------------- */
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -113,22 +133,9 @@ address {
   text-decoration: none;
 }
 
-textarea {
-  display: block;
-  resize: none;
-  width: 100%;
-  padding: 12px 16px;
-
-  border: 1px solid #21212133;
-  border-radius: 5px;
-}
-textarea:hover {
-  border-color: var(--accent-color);
-}
-.textarea-input:not(:placeholder-shown) + textarea {
-  border: 1px solid #2196f3;
-}
 /*Шапка*/
+
+/* ---------------------------------page-header------------------------------------------- */
 
 .page-header {
   display: flex;
@@ -148,7 +155,7 @@ textarea:hover {
   display: flex;
   align-items: center;
 }
-
+/* ---------------------------------page-logo------------------------------------------- */
 .logo-top {
   margin-right: 93px;
 
@@ -161,7 +168,7 @@ textarea:hover {
 .logoWeb {
   color: var(--accent-color);
 }
-
+/* ---------------------------------page-header------------------------------------------- */
 .nav-list {
   display: flex;
 }
@@ -236,6 +243,8 @@ textarea:hover {
 }
 /*Основной контент*/
 /*секция1 заказать услугу*/
+/* ---------------------------------order-section------------------------------------------- */
+
 .order {
   text-align: center;
   padding: 0;
@@ -285,6 +294,8 @@ textarea:hover {
   letter-spacing: 0.06em;
 }
 
+/* ---------------------------------modal------------------------------------------- */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -329,10 +340,10 @@ textarea:hover {
   transform: translate(-50%, -50%) scale(0);
 }
 
-.modal-container {
+.modal__container {
   position: relative;
 }
-.close-icon {
+.modal__icon {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -354,14 +365,16 @@ textarea:hover {
 
   cursor: pointer;
 }
-.close-icon:hover,
-.close-icon:focus {
+.modal__icon:hover,
+.modal__icon:focus {
   color: var(--accent-color);
 }
-.close-icon:hover .modal {
+.modal__icon:hover .modal {
   transform: scale(0);
 }
-.form-contact-us {
+
+/* ---------------------------------main-form------------------------------------------- */
+.main-form {
   display: flex;
   flex-direction: column;
 }
@@ -388,6 +401,21 @@ textarea:hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.textarea-input {
+  display: block;
+  resize: none;
+  width: 100%;
+  padding: 12px 16px;
+
+  border: 1px solid #21212133;
+  border-radius: 5px;
+}
+
+.textarea-input::placeholder {
+  font-size: 12px;
+  color: rgba(117, 117, 117, 0.5);
+}
+
 .label-container.mailing {
   position: relative;
   display: flex;
@@ -407,11 +435,6 @@ textarea:hover {
 .form-field.mailing {
   font-size: 14px;
   line-height: 1.7;
-}
-
-.textarea-input::placeholder {
-  font-size: 12px;
-  color: rgba(117, 117, 117, 0.5);
 }
 
 .input {
@@ -494,13 +517,13 @@ textarea:hover {
 .form-button:focus {
   cursor: pointer;
 }
-
+/* ---------------------------------order-section------------------------------------------- */
 .main-title {
   display: block;
   width: 696px;
   margin: auto;
 }
-
+/* ---------------------------------benefits-section------------------------------------------- */
 /*секция 2, 3, 4, 5*/
 .visually-hidden,
 .input-checkbox {
@@ -562,16 +585,19 @@ textarea:hover {
   margin-right: 30px;
 }
 
+/* ---------------------------------offer-section------------------------------------------- */
+
 .offer {
   padding-bottom: 94px;
 }
 
+/* !!!!!!!!!!!!!!!!!! якось уніфікувати для всіх */
 .benefits-title,
 .offer-title,
 .team-title,
 .clients-title,
 .work-title,
-.form-title {
+.main-form__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -579,7 +605,7 @@ textarea:hover {
   color: var(--title-text-color);
 }
 
-.form-title {
+.main-form__title {
   font-size: 20px;
   line-height: 1.17;
   margin-bottom: 12px;
@@ -617,6 +643,8 @@ textarea:hover {
   align-items: center;
   background-color: rgba(47, 48, 58, 0.8);
 }
+
+/* ---------------------------------team-section------------------------------------------- */
 
 .team-item,
 .work-item {
@@ -699,6 +727,8 @@ textarea:hover {
 .team-content {
   margin-bottom: 16px;
 }
+
+/* ---------------------------------clients-section------------------------------------------- */
 .clients-list {
   display: flex;
 }
@@ -745,6 +775,8 @@ textarea:hover {
   justify-content: center;
   margin-bottom: 34px;
 }
+
+/* ---------------------------------works??????-section------------------------------------------- */
 .works-button {
   padding: 6px 22px;
 
@@ -850,6 +882,7 @@ textarea:hover {
   margin-bottom: 24px;
 }
 
+/* ---------------------------------page-logo------------------------------------------- */
 .logo-footer {
   display: block;
   margin-bottom: 20px;
@@ -860,6 +893,8 @@ textarea:hover {
   line-height: 1.19;
   color: var(--white-text-color);
 }
+
+/* ---------------------------------page-footer------------------------------------------- */
 
 .contacts-footer {
   transition-property: color;
@@ -917,6 +952,7 @@ textarea:hover {
 .footer-block:last-child {
   margin-right: 0;
 }
+/* ---------------------------------secondary-form------------------------------------------- */
 .join-us,
 .subscribe-us {
   text-transform: uppercase;

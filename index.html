@@ -14,6 +14,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+
+    <!--
+  <link rel="stylesheet" href="./css/main.min.css" /> -->
   </head>
 
   <body>
@@ -458,10 +461,12 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <div class="close-icon" data-modal-close>&#10006;</div>
-        <div class="modal-container">
-          <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
-          <form class="form-contact-us" autocomplete="off">
+        <div class="modal__icon" data-modal-close>&#10006;</div>
+        <div class="modal__container">
+          <form class="main-form" autocomplete="off">
+            <h2 class="main-form__title">
+              Оставьте свои данные, мы вам перезвоним
+            </h2>
             <div class="label-container">
               <label for="input-name" class="form-field">Имя</label>
               <div class="icon-container">
