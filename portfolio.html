@@ -20,43 +20,57 @@
     <!--Шапка-->
 
     <header>
-      <div class="header-container">
+      <div class="page-header__container">
         <div class="container">
           <div class="page-header">
-            <nav class="nav">
-              <p class="logo-top"><span class="logoWeb">Web</span>Studio</p>
-              <ul class="nav-list">
-                <li class="site-nav-link">
-                  <a href="./index.html" class="site-nav-content">Студия</a>
+            <nav class="nav-container">
+              <p class="logo page-header__logo">
+                <span class="logo__Web">Web</span>Studio
+              </p>
+              <ul class="page-header__navigation">
+                <li class="page-header__item">
+                  <a href="./index.html" class="page-header__link">Студия </a>
                 </li>
-                <li class="site-nav-link">
-                  <a href="./portfolio.html" class="current-link">Портфолио</a>
+                <li class="page-header__item">
+                  <a
+                    href="./portfolio.html"
+                    class="page-header__link page-header__link--current"
+                    >Портфолио
+                  </a>
                 </li>
-                <li class="site-nav-link">
-                  <a href="" class="site-nav-content">Контакты</a>
+                <li class="page-header__item">
+                  <a href="" class="page-header__link">Контакты</a>
                 </li>
               </ul>
             </nav>
 
-            <ul class="contacts-top">
-              <li class="contacts-top-item">
+            <ul class="page-header__contacts">
+              <li class="page-header__contacts-item">
                 <a
                   href="mailto:info@devstudio.com"
-                  class="contacts-top-link mail"
+                  class="page-header__contacts-link"
                 >
-                  <svg class="email-icon" width="16px" height="12px">
+                  <svg
+                    class="page-header__contacts-icon page-header__contacts-icon--email"
+                    width="16px"
+                    height="12px"
+                  >
                     <use href="./images/symbol-defs2.svg#icon-email-icon"></use>
                   </svg>
-                  info@devstudio.com</a
-                >
+                  info@devstudio.com
+                </a>
               </li>
-              <li class="contacts-top-item">
-                <a href="tel:+380961111111" class="contacts-top-link phone"
-                  ><svg class="phone-icon" width="10px" height="16px">
+              <li class="page-header__contacts-item">
+                <a href="tel:+380961111111" class="page-header__contacts-link"
+                  ><svg
+                    class="page-header__contacts-icon page-header__contacts-icon--phone"
+                    width="10px"
+                    height="16px"
+                  >
                     <use href="./images/symbol-defs2.svg#icon-phone-icon"></use>
                   </svg>
-                  +38 096 111 11 11</a
-                >
+                  +38 096 111 11 11
+                </a>
               </li>
             </ul>
           </div>
@@ -71,19 +85,25 @@
           <h2 class="visually-hidden">Наши работы</h2>
           <ul class="works-button-list">
             <li class="works-button-item">
-              <button type="button" class="works-button">Все</button>
+              <button type="button" class="button works-button">Все</button>
             </li>
             <li class="works-button-item">
-              <button type="button" class="works-button">Веб-сайты</button>
+              <button type="button" class="button works-button">
+                Веб-сайты
+              </button>
             </li>
             <li class="works-button-item">
-              <button type="button" class="works-button">Приложения</button>
+              <button type="button" class="button works-button">
+                Приложения
+              </button>
             </li>
             <li class="works-button-item">
-              <button type="button" class="works-button">Дизайн</button>
+              <button type="button" class="button works-button">Дизайн</button>
             </li>
             <li class="works-button-item">
-              <button type="button" class="works-button">Маркетинг</button>
+              <button type="button" class="button works-button">
+                Маркетинг
+              </button>
             </li>
           </ul>
 
@@ -288,59 +308,61 @@
     <!--Футер-->
     <footer>
       <div class="container">
-        <div class="footer-conteiner">
-          <div class="footer-block">
-            <a href="" class="logo-footer"
-              ><span class="logoWeb">Web</span>Studio</a
-            >
+        <div class="footer">
+          <div class="footer__block">
+            <p class="logo footer__logo">
+              <span class="logo__Web">Web</span>Studio
+            </p>
             <address>г. Киев, пр-т Леси Украинки, 26</address>
-            <ul class="contacts-footer">
-              <li class="contacts-footer item">
-                <a href="mailto:info@devstudio.com" class="contacts-footer link"
+            <ul class="footer__contacts">
+              <li class="footer__contacts-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="footer__contacts-link"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="contacts-footer item">
-                <a href="tel:+380961111111" class="contacts-footer link"
+              <li class="footer__contacts-item">
+                <a href="tel:+380961111111" class="footer__contacts-link"
                   >+38 096 111 11 11</a
                 >
               </li>
             </ul>
           </div>
 
-          <div class="footer-block">
-            <p class="join-us">присоединяйтесь</p>
-            <ul class="footer-media">
-              <li class="footer-media-item">
-                <a class="footer-media-link" href=""
-                  ><svg class="footer-media-svg">
+          <div class="footer__block">
+            <p class="footer__title">присоединяйтесь</p>
+            <ul class="footer__media">
+              <li class="footer__media-item">
+                <a class="footer__media-link" href=""
+                  ><svg class="footer__media-icon">
                     <use
                       href="./images/symbol-defs2.svg#icon-footer-instagram"
                     ></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer-media-item">
-                <a class="footer-media-link" href=""
-                  ><svg class="footer-media-svg">
+              <li class="footer__media-item">
+                <a class="footer__media-link" href=""
+                  ><svg class="footer__media-icon">
                     <use
                       href="./images/symbol-defs2.svg#icon-footer-twitter"
                     ></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer-media-item">
-                <a class="footer-media-link" href=""
-                  ><svg class="footer-media-svg">
+              <li class="footer__media-item">
+                <a class="footer__media-link" href=""
+                  ><svg class="footer__media-icon">
                     <use
                       href="./images/symbol-defs2.svg#icon-footer-facebook"
                     ></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer-media-item">
-                <a class="footer-media-link" href=""
-                  ><svg class="footer-media-svg">
+              <li class="footer__media-item">
+                <a class="footer__media-link" href=""
+                  ><svg class="footer__media-icon">
                     <use
                       href="./images/symbol-defs2.svg#icon-footer-linkedin"
                     ></use>
@@ -349,18 +371,20 @@
               </li>
             </ul>
           </div>
-          <div class="footer-block">
-            <form class="subscribe-form">
-              <p class="subscribe-us">подпишитесь на рассылку</p>
+          <div class="footer__block">
+            <p class="footer__title">подпишитесь на рассылку</p>
+            <form class="footer__form">
               <label for="subscribe-form-input"> </label>
               <input
                 type="email"
                 name="footer-mail"
-                class="footer-input"
+                class="footer__form-input"
                 id="subscribe-form-input"
                 placeholder="E-mail"
               />
-              <button type="submit" class="footer-button">Подписаться</button>
+              <button type="submit" class="button footer__form-button">
+                Подписаться
+              </button>
             </form>
           </div>
         </div>
