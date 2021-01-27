@@ -12,3 +12,24 @@ $colors: (
 @function getColor($key) {
   @return map-get($colors, $key);
 }
+
+$fonts: (
+  "normal": 400,
+  "bold": 700,
+  "base-size": 14px,
+  "title-size": 36px,
+  "subtitle-size": 16px,
+);
+
+@function getFont($key) {
+  @return map-get($fonts, $key);
+}
+
+$geometry: (
+  "section-padding": 94px,
+  "base-radius": 4px,
+);
+
+@function getGeometry($key) {
+  @return map-get($geometry, $key);
+}

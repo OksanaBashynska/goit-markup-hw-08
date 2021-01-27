@@ -23,14 +23,14 @@ html {
   --add-background-color: #f5f4fa;
 }
 
-/* ---------------------------------normalize------------------------------------------- */
+/* ---------------------------------???------------------------------------------- */
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
-
+/* ---------------------------------style------------------------------------------- */
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -41,7 +41,7 @@ body {
 
   background-color: var(--main-background-color);
 }
-
+/* ---------------------------------normalize------------------------------------------- */
 h1,
 h2,
 h3 {
@@ -66,6 +66,7 @@ a {
 p {
   margin: 0px;
 }
+/* ---------------------------------placeholders------------------------------------------- */
 button {
   font-family: inherit;
   font-weight: 700;
@@ -80,7 +81,7 @@ button:hover,
 button:focus {
   cursor: pointer;
 }
-
+/* ---------------------------------???------------------------------------------- */
 footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -133,15 +134,12 @@ address {
 .logo__Web {
   color: var(--accent-color);
 }
-
+/* ---------------------------------page-header------------------------------------------- */
 .page-header__navigation {
   display: flex;
 }
-.page-header__navigation :last-child {
-  margin-right: 0px;
-}
 
-.page-header__item {
+.page-header__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -394,7 +392,7 @@ address {
   padding-left: 40px;
 
   border: 1px solid #21212133;
-  border-radius: 5px;
+  border-radius: 4px;
   outline: transparent;
 
   transition-property: border-color;
@@ -408,7 +406,7 @@ address {
   padding: 12px 16px;
 
   border: 1px solid #21212133;
-  border-radius: 5px;
+  border-radius: 4px;
   outline: transparent;
 }
 
@@ -476,8 +474,8 @@ address {
   margin: auto;
 }
 /* ---------------------------------benefits-section------------------------------------------- */
-/*секция 2, 3, 4, 5*/
-.visually-hidden,
+
+.benefits__title--hidden,
 .main-form__checkbox {
   position: absolute;
   clip: rect (0000);
@@ -492,11 +490,15 @@ address {
   padding-bottom: 94px;
 }
 
-.benefits-list {
+.benefits__list {
   display: flex;
 }
 
-.benefits-list-item::before {
+.benefits__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.benefits__item::before {
   display: block;
   margin-bottom: 30px;
   content: "";
@@ -507,23 +509,23 @@ address {
   background-color: #f5f4fa;
 }
 
-.antena::before {
+.benefits__item--antena::before {
   background-image: url(../images/antenna.svg);
 }
 
-.clock::before {
+.benefits__item--clock::before {
   background-image: url(../images/clock.svg);
 }
 
-.diagram::before {
+.benefits__item--diagram::before {
   background-image: url(../images/diagram.svg);
 }
 
-.astronaut::before {
+.benefits__item--astronaut::before {
   background-image: url(../images/astronaut.svg);
 }
 
-.benefits-item {
+.benefits__subtitle {
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -533,21 +535,16 @@ address {
   color: var(--title-text-color);
 }
 
-.benefits-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 /* ---------------------------------offer-section------------------------------------------- */
 
 .offer {
   padding-bottom: 94px;
 }
 
-/* !!!!!!!!!!!!!!!!!! якось уніфікувати для всіх */
-.benefits-title,
-.offer-title,
-.team-title,
-.clients-title,
+/* ---------------------------------placeholders------------------------------------------- */
+.offer__title,
+.team__title,
+.clients__title,
 .work-title,
 .main-form__title {
   font-weight: 700;
@@ -556,29 +553,29 @@ address {
   text-align: center;
   color: var(--title-text-color);
 }
-
+/* ---------------------------------offer-section------------------------------------------- */
 .main-form__title {
   font-size: 20px;
   line-height: 1.17;
   margin-bottom: 12px;
 }
 
-.offer-list {
+.offer__list {
   display: flex;
 }
-.offer-title {
+.offer__title {
   margin-bottom: 50px;
 }
-.offer-list-link {
+.offer__item {
   position: relative;
 }
-.offer-list-link:not(:last-child) {
+.offer__item:not(:last-child) {
   margin-right: 30px;
 }
-.offer-img {
+.offer__image {
   display: block;
 }
-.offer-text {
+.offer__text {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -598,13 +595,13 @@ address {
 
 /* ---------------------------------team-section------------------------------------------- */
 
-.team-item,
+.team__subtitle,
 .work-item {
   font-weight: 700;
   line-height: 1.14;
   color: var(--title-text-color);
 }
-.team-item {
+.team__subtitle {
   margin-bottom: 10px;
 }
 
@@ -618,25 +615,25 @@ address {
 
   background-color: var(--add-background-color);
 }
-.team-title {
+.team__title {
   margin-bottom: 50px;
 }
-.team-list {
+.team__list {
   display: flex;
 }
-.team-img {
+.team__image {
   display: block;
 }
-.team-list-item {
+.team__item {
   display: block;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-list-item:not(:last-child) {
+.team__item:not(:last-child) {
   margin-right: 30px;
 }
-.team-card {
+.team__card {
   display: block;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -644,7 +641,7 @@ address {
 
   background-color: var(--main-background-color);
 }
-.team-media-link,
+.team__media-link,
 .footer__media-link {
   display: inline-flex;
   justify-content: center;
@@ -657,44 +654,44 @@ address {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-media-link {
+.team__media-link {
   fill: #afb1b8;
 }
-.team-media-link:hover,
-.team-media-link:focus {
+.team__media-link:hover,
+.team__media-link:focus {
   background-color: var(--accent-color);
   fill: var(--white-text-color);
 }
-.team-media {
+.team__media-icon {
   width: 20px;
   height: 20px;
 }
 
-.team-content,
+.team__text,
 .work-content {
   font-size: 16px;
   line-height: 1.18;
   color: var(--primary-text-color);
 }
-.team-content {
+.team__text {
   margin-bottom: 16px;
 }
 
 /* ---------------------------------clients-section------------------------------------------- */
-.clients-list {
+.clients__list {
   display: flex;
 }
-.clients-title {
+.clients__title {
   margin-bottom: 50px;
 }
-.clients-list-item {
+.clients__item {
   margin-right: 30px;
 }
-.clients-list-item:last-child {
+.clients__item:last-child {
   margin-right: 0;
 }
 
-.clients-link {
+.clients__logo-link {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -710,8 +707,8 @@ address {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients__logo-link:hover,
+.clients__logo-link:focus {
   border-color: var(--accent-color);
   fill: var(--accent-color);
   cursor: pointer;
