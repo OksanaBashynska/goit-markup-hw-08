@@ -47,7 +47,7 @@
     color: getColor("primary");
 
     &--mailing {
-      font-size: 14px;
+      font-size: getFont("base-size");
       line-height: 1.7;
     }
   }
@@ -73,7 +73,7 @@
     width: 100%;
     padding: 12px 16px;
 
-    border: 1px solid #21212133;
+    @include bordered(#21212133);
     border-radius: 4px;
     outline: transparent;
 

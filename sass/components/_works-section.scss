@@ -114,8 +114,8 @@
   &__card-title {
     margin-bottom: 24px;
 
-    font-weight: 700;
-    line-height: 1.14;
+    font-weight: getFont("bold");
+    line-height: getFont("base-line-height");
     color: getColor("title");
   }
 

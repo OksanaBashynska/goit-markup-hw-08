@@ -19,6 +19,7 @@ $fonts: (
   "base-size": 14px,
   "title-size": 36px,
   "subtitle-size": 16px,
+  "base-line-height": 1.14,
 );
 
 @function getFont($key) {

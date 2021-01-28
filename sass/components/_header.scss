@@ -3,12 +3,12 @@
   justify-content: space-between;
 
   font-weight: 500;
-  line-height: 1.14;
+  line-height: getFont("base-line-height");
   letter-spacing: 0.02em;
   color: getColor("title");
 
   &__container {
-    border-bottom: 1px solid #ececec;
+    @include bordered(#ececec);
   }
 
   &__navigation {

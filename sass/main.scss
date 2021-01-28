@@ -1,8 +1,8 @@
-@import "./utils/variables";
 @import "./base/normalize";
-@import "./components/style";
+@import "./utils/variables";
 @import "./utils/placeholders";
 @import "./utils/mixins";
+@import "./components/style";
 @import "./components/header";
 @import "./components/logo";
 @import "./components/order-section";

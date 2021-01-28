@@ -21,7 +21,7 @@
     cursor: pointer;
   }
   &::placeholder {
-    font-size: 16px;
+    font-size: getFont("subtitle-size");
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
     letter-spacing: 0.03em;

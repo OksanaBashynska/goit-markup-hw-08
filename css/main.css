@@ -43,52 +43,6 @@ Sections
 /**
 Remove the margin in all browsers.
 */
-body,
-h1,
-h2,
-h3 {
-  margin: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  display: block;
-  margin: 0;
-  text-decoration: none;
-  color: var(--title-text-color);
-}
-
-p {
-  margin: 0;
-}
-
-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  line-height: 1.71;
-  color: #ffffff;
-  background-color: #2f303a;
-}
-
-address {
-  display: block;
-  margin-bottom: 9px;
-  font-style: normal;
-  text-decoration: none;
-}
-
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
 /**
 Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
@@ -314,16 +268,6 @@ summary {
   display: list-item;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
-  background-color: #ffffff;
-}
-
 .order__button, .main-form__button, .works__button, .footer__form-button {
   font-family: inherit;
   font-weight: 700;
@@ -388,6 +332,62 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+  background-color: #ffffff;
+}
+
+body,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  display: block;
+  margin: 0;
+  text-decoration: none;
+  color: #212121;
+}
+
+p {
+  margin: 0;
+}
+
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  line-height: 1.71;
+  color: #ffffff;
+  background-color: #2f303a;
+}
+
+address {
+  display: block;
+  margin-bottom: 9px;
+  font-style: normal;
+  text-decoration: none;
+}
+
 .page-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -402,7 +402,7 @@ body {
 }
 
 .page-header__container {
-  border-bottom: 1px solid #ececec;
+  border: 1px solid #ececec;
 }
 
 .page-header__navigation {
@@ -547,7 +547,6 @@ body {
 }
 
 .order__title-container {
-  display: block;
   width: 696px;
   margin: auto;
 }
@@ -972,7 +971,6 @@ body {
 }
 
 .team__card {
-  display: block;
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;

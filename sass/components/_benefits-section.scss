@@ -45,7 +45,7 @@
 
     font-weight: getFont("bold");
     font-size: getFont("base-size");
-    line-height: 1.14;
+    line-height: getFont("base-line-height");
     text-transform: uppercase;
     color: getColor("title");
   }
