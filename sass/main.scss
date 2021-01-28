@@ -1,5 +1,17 @@
 @import "./utils/variables";
 @import "./base/normalize";
+@import "./components/style";
 @import "./utils/placeholders";
 @import "./utils/mixins";
 @import "./components/header";
+@import "./components/logo";
+@import "./components/order-section";
+@import "./components/backdrop";
+@import "./components/main-form";
+@import "./components/benefits-section";
+@import "./components/offer-section";
+@import "./components/team-section";
+@import "./components/clients-section";
+@import "./components/works-section";
+@import "./components/footer";
+@import "./components/footer-form";

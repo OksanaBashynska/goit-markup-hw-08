@@ -69,6 +69,30 @@ p {
   margin: 0;
 }
 
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  line-height: 1.71;
+  color: getColor("secondary");
+  background-color: getColor("background-dark");
+}
+
+address {
+  display: block;
+  margin-bottom: 9px;
+
+  font-style: normal;
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 /**
 Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */

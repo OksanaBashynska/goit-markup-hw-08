@@ -1,0 +1,64 @@
+.team {
+  display: block;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: getColor("background-light");
+
+  &__title {
+    @extend %page-titles;
+    margin-bottom: 50px;
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    line-height: 1.14;
+    color: getColor("title");
+
+    margin-bottom: 10px;
+  }
+
+  &__list {
+    display: flex;
+  }
+  &__image {
+    display: block;
+  }
+  &__item {
+    display: block;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__card {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+
+    background-color: getColor("main-background");
+  }
+  &__media-link {
+    @extend %media-link;
+    fill: #afb1b8;
+
+    &:hover,
+    &:focus {
+      background-color: getColor("accent");
+      fill: getColor("secondary");
+    }
+  }
+
+  &__media-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__text {
+    @extend %card-text;
+    margin-bottom: 16px;
+  }
+}
