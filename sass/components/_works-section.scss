@@ -57,9 +57,8 @@
     margin-bottom: 0px;
   }
   &__card-link {
+    @include transition(box-shadow);
     transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__card-link:hover,
   &__card-link:focus {
@@ -100,9 +99,7 @@
     color: getColor("secondary");
     background-color: rgba(33, 150, 243, 0.9);
 
-    transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition(transform);
   }
 
   &__card-textContainer {

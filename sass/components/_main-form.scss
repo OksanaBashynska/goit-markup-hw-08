@@ -36,9 +36,7 @@
     left: 12px;
     transform: translateY(-50%);
 
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition(fill);
   }
 
   &__label {
@@ -62,9 +60,7 @@
     border-radius: 4px;
     outline: transparent;
 
-    transition-property: border-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition(border-color);
   }
 
   &__textarea {
@@ -122,9 +118,7 @@
     border-radius: 2px;
     outline: transparent;
 
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition(border-color);
   }
 
   &__checkbox:checked + &__checkbox-icon {
