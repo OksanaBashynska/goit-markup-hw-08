@@ -1,8 +1,14 @@
 .benefits {
-  @extend %section-padding;
+  padding-top: 94px;
+  padding-bottom: 94px;
 
   &__title--hidden {
-    @extend %hidden;
+    position: absolute;
+    clip: rect (0000);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    opacity: 0;
   }
 
   &__list {

@@ -103,6 +103,11 @@
   }
   &__checkbox {
     @extend %hidden;
+
+    &:hover + &-icon,
+    &:focus + &-icon {
+      border-color: getColor("accent");
+    }
   }
 
   &__checkbox-icon {
@@ -115,11 +120,13 @@
     height: 15px;
     border: 2px solid getColor("title");
     border-radius: 2px;
+    outline: transparent;
 
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+
   &__checkbox:checked + &__checkbox-icon {
     border-color: getColor("accent");
     background-color: getColor("accent");
