@@ -432,6 +432,7 @@ address {
 }
 
 .page-header {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -454,6 +455,33 @@ address {
   display: flex;
 }
 
+.page-header__menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.page-header__menu-button--is-open .page-header__menu-button__icon-cross {
+  display: block;
+}
+
+.page-header__icon-cross {
+  display: none;
+}
+
+.page-header__menu-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+}
+
 .page-header__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -465,8 +493,8 @@ address {
   color: #212121;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 2500ms;
-          transition-duration: 2500ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -529,8 +557,8 @@ address {
   color: #757575;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 2500ms;
-          transition-duration: 2500ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -561,6 +589,10 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
 }
 
 .logo {
@@ -573,6 +605,9 @@ address {
 
 .page-header__logo {
   margin-right: 93px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .logo__Web {
@@ -705,8 +740,8 @@ address {
   color: #212121;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 2500ms;
-          transition-duration: 2500ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
@@ -769,8 +804,8 @@ address {
           transform: translateY(-50%);
   -webkit-transition-property: fill;
   transition-property: fill;
-  -webkit-transition-duration: 2500ms;
-          transition-duration: 2500ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -795,8 +830,8 @@ address {
   outline: transparent;
   -webkit-transition-property: border-color;
   transition-property: border-color;
-  -webkit-transition-duration: 2500ms;
-          transition-duration: 2500ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -863,8 +898,8 @@ address {
   outline: transparent;
   -webkit-transition-property: border-color;
   transition-property: border-color;
-  -webkit-transition-duration: 2500ms;
-          transition-duration: 2500ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1166,8 +1201,8 @@ address {
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
   transition-property: box-shadow, -webkit-box-shadow;
-  -webkit-transition-duration: 2500ms;
-          transition-duration: 2500ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: box-shadow;
@@ -1221,8 +1256,8 @@ address {
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 2500ms;
-          transition-duration: 2500ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1261,8 +1296,8 @@ address {
 .footer__contacts {
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 2500ms;
-          transition-duration: 2500ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1316,8 +1351,8 @@ address {
   outline: transparent;
   -webkit-transition-property: border-color;
   transition-property: border-color;
-  -webkit-transition-duration: 2500ms;
-          transition-duration: 2500ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
