@@ -11,82 +11,101 @@
     <!--Шапка-->
 
     <header>
-      <div class="container">
-        <div class="page-header">
-          <p class="logo page-header__logo">
-            <span class="logo__Web">Web</span>Studio
-          </p>
-          <nav class="nav-container">
-            <ul class="page-header__navigation">
-              <li class="page-header__item">
-                <a
-                  href="./index.html"
-                  class="page-header__link page-header__link--current"
-                  >Студия
-                </a>
-              </li>
-              <li class="page-header__item">
-                <a href="./portfolio.html" class="page-header__link"
-                  >Портфолио
-                </a>
-              </li>
-              <li class="page-header__item">
-                <a href="" class="page-header__link">Контакты </a>
-              </li>
-            </ul>
+      <div class="container page-header__container">
+        <p class="logo page-header__logo">
+          <span class="logo__Web">Web</span>Studio
+        </p>
+        <nav class="page-header__menu-container" id="menu-container" data-menu>
+          <ul class="page-header__navigation">
+            <li class="page-header__item">
+              <a
+                href="./index.html"
+                class="page-header__link page-header__link--current"
+                >Студия
+              </a>
+            </li>
+            <li class="page-header__item">
+              <a href="./portfolio.html" class="page-header__link"
+                >Портфолио
+              </a>
+            </li>
+            <li class="page-header__item">
+              <a href="" class="page-header__link">Контакты </a>
+            </li>
+          </ul>
 
-            <ul class="page-header__contacts">
-              <li class="page-header__contacts-item">
-                <a
-                  href="mailto:info@devstudio.com"
-                  class="page-header__contacts-link"
+          <ul class="page-header__contacts">
+            <li class="page-header__contacts-item">
+              <a href="tel:+380961111111" class="page-header__contacts-link"
+                ><svg
+                  class="page-header__contacts-icon page-header__contacts-icon--phone"
+                  width="10px"
+                  height="16px"
                 >
-                  <svg
-                    class="page-header__contacts-icon page-header__contacts-icon--email"
-                    width="16px"
-                    height="12px"
-                  >
-                    <use href="./images/symbol-defs2.svg#icon-email-icon"></use>
-                  </svg>
-                  info@devstudio.com
-                </a>
-              </li>
-              <li class="page-header__contacts-item">
-                <a href="tel:+380961111111" class="page-header__contacts-link"
-                  ><svg
-                    class="page-header__contacts-icon page-header__contacts-icon--phone"
-                    width="10px"
-                    height="16px"
-                  >
-                    <use href="./images/symbol-defs2.svg#icon-phone-icon"></use>
-                  </svg>
-                  +38 096 111 11 11
-                </a>
-              </li>
-            </ul>
-            <button
-              type="button"
-              class="page-header__menu-button page-header__menu-button--is-open"
-              data-menu-button
-              aria-expanded="false"
-              aria-controls="menu-container"
-            >
-              <svg
-                width="40px"
-                height="40px"
-                aria-label="Переключить мобильное меню"
+                  <use href="./images/symbol-sprite.svg#icon-phone-icon"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="page-header__contacts-item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="page-header__contacts-link page-header__contacts-link--email"
               >
-                <use class="page-header__icon-cross" href=""></use>
-                <use class="page-header__icon-menu" href=""></use>
-              </svg>
-            </button>
-            <div
-              class="page-header__menu-container"
-              id="menu-container"
-              data-menu
-            ></div>
-          </nav>
-        </div>
+                <svg
+                  class="page-header__contacts-icon page-header__contacts-icon--email"
+                  width="16px"
+                  height="12px"
+                >
+                  <use href="./images/symbol-sprite.svg#icon-email-icon"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="page-header__media-list">
+            <li class="page-header__media-item">
+              <a href="" class="page-header__media-link"
+                >Instagram <span class="page-header__media-sign">|</span></a
+              >
+            </li>
+            <li class="page-header__media-item">
+              <a href="" class="page-header__media-link"
+                >Twitter<span class="page-header__media-sign">|</span></a
+              >
+            </li>
+            <li class="page-header__media-item">
+              <a href="" class="page-header__media-link"
+                >Facebook<span class="page-header__media-sign">|</span></a
+              >
+            </li>
+            <li class="page-header__media-item">
+              <a href="" class="page-header__media-link">LinkedIn</a>
+            </li>
+          </ul>
+        </nav>
+        <button
+          type="button"
+          class="page-header__menu-button is-open"
+          data-menu-button
+          aria-expanded="false"
+          aria-controls="menu-container"
+        >
+          <svg
+            width="40px"
+            height="40px"
+            aria-label="Переключить мобильное меню"
+          >
+            <use
+              class="page-header__icon-cross"
+              href="../images/symbol-sprite.svg#close-icon"
+            ></use>
+            <use
+              class="page-header__icon-menu"
+              href="../images/symbol-sprite.svg#menu-icon"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -151,7 +170,7 @@
             <li class="offer__item">
               <img
                 class="offer__image"
-                src="./images/box1.jpg"
+                src="./images/jpg/about-us1.jpg"
                 alt="Человек печатает на компьютере с планшета"
                 width="370"
               />
@@ -160,7 +179,7 @@
             <li class="offer__item">
               <img
                 class="offer__image"
-                src="./images/box2.jpg"
+                src="./images/jpg/about-us2.jpg"
                 alt="Человек печатает на компьютере и смотрит в телефон"
                 width="370"
               />
@@ -169,7 +188,7 @@
             <li class="offer__item">
               <img
                 class="offer__image"
-                src="./images/box3.jpg"
+                src="./images/jpg/about-us3.jpg"
                 alt="Человек выбирает цветовую гамму на планшете"
                 width="370"
               />
@@ -186,7 +205,7 @@
           <ul class="team__list">
             <li class="team__item">
               <img
-                src="./images/img1.jpg"
+                src="./images/jpg/team1.jpg"
                 alt="Улыбающийся мужчина"
                 width="270"
                 class="team__image"
@@ -197,28 +216,28 @@
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-defs2.svg#icon-team-instagram"
+                      href="./images/symbol-sprite.svg#icon-team-instagram"
                     ></use>
                   </svg>
                 </a>
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-defs2.svg#icon-team-twitter"
+                      href="./images/symbol-sprite.svg#icon-team-twitter"
                     ></use>
                   </svg>
                 </a>
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-defs2.svg#icon-team-facebook"
+                      href="./images/symbol-sprite.svg#icon-team-facebook"
                     ></use>
                   </svg>
                 </a>
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-defs2.svg#icon-team-linkedin"
+                      href="./images/symbol-sprite.svg#icon-team-linkedin"
                     ></use>
                   </svg>
                 </a>
@@ -226,7 +245,7 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/img2.jpg"
+                src="./images/jpg/team2.jpg"
                 alt="Улыбающаяся женщина"
                 width="270"
                 class="team__image"
@@ -237,28 +256,28 @@
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-defs2.svg#icon-team-instagram"
+                      href="./images/symbol-sprite.svg#icon-team-instagram"
                     ></use>
                   </svg>
                 </a>
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-defs2.svg#icon-team-twitter"
+                      href="./images/symbol-sprite.svg#icon-team-twitter"
                     ></use>
                   </svg>
                 </a>
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-defs2.svg#icon-team-facebook"
+                      href="./images/symbol-sprite.svg#icon-team-facebook"
                     ></use>
                   </svg>
                 </a>
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-defs2.svg#icon-team-linkedin"
+                      href="./images/symbol-sprite.svg#icon-team-linkedin"
                     ></use>
                   </svg>
                 </a>
@@ -266,7 +285,7 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/img3.jpg"
+                src="./images/jpg/team3.jpg"
                 alt="Улыбающийся мужчина"
                 width="270"
                 class="team__image"
@@ -277,28 +296,28 @@
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-defs2.svg#icon-team-instagram"
+                      href="./images/symbol-sprite.svg#icon-team-instagram"
                     ></use>
                   </svg>
                 </a>
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-defs2.svg#icon-team-twitter"
+                      href="./images/symbol-sprite.svg#icon-team-twitter"
                     ></use>
                   </svg>
                 </a>
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-defs2.svg#icon-team-facebook"
+                      href="./images/symbol-sprite.svg#icon-team-facebook"
                     ></use>
                   </svg>
                 </a>
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-defs2.svg#icon-team-linkedin"
+                      href="./images/symbol-sprite.svg#icon-team-linkedin"
                     ></use>
                   </svg>
                 </a>
@@ -306,7 +325,7 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/img4.jpg"
+                src="./images/jpg/team4.jpg"
                 alt="Улыбающийся мужчина"
                 width="270"
                 class="team__image"
@@ -317,28 +336,28 @@
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-defs2.svg#icon-team-instagram"
+                      href="./images/symbol-sprite.svg#icon-team-instagram"
                     ></use>
                   </svg>
                 </a>
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-defs2.svg#icon-team-twitter"
+                      href="./images/symbol-sprite.svg#icon-team-twitter"
                     ></use>
                   </svg>
                 </a>
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-defs2.svg#icon-team-facebook"
+                      href="./images/symbol-sprite.svg#icon-team-facebook"
                     ></use>
                   </svg>
                 </a>
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-defs2.svg#icon-team-linkedin"
+                      href="./images/symbol-sprite.svg#icon-team-linkedin"
                     ></use>
                   </svg>
                 </a>
@@ -356,42 +375,54 @@
             <li class="clients__item">
               <a href="" class="clients__logo-link"
                 ><svg width="44px" height="49px">
-                  <use href="./images/symbol-defs2.svg#icon-client-logo1"></use>
+                  <use
+                    href="./images/symbol-sprite.svg#icon-client-logo1"
+                  ></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a href="" class="clients__logo-link"
                 ><svg width="40px" height="52px">
-                  <use href="./images/symbol-defs2.svg#icon-client-logo2"></use>
+                  <use
+                    href="./images/symbol-sprite.svg#icon-client-logo2"
+                  ></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a href="" class="clients__logo-link"
                 ><svg width="41px" height="43px">
-                  <use href="./images/symbol-defs2.svg#icon-client-logo3"></use>
+                  <use
+                    href="./images/symbol-sprite.svg#icon-client-logo3"
+                  ></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a href="" class="clients__logo-link"
                 ><svg width="80px" height="42px">
-                  <use href="./images/symbol-defs2.svg#icon-client-logo4"></use>
+                  <use
+                    href="./images/symbol-sprite.svg#icon-client-logo4"
+                  ></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a href="" class="clients__logo-link"
                 ><svg width="59px" height="47px">
-                  <use href="./images/symbol-defs2.svg#icon-client-logo5"></use>
+                  <use
+                    href="./images/symbol-sprite.svg#icon-client-logo5"
+                  ></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a href="" class="clients__logo-link"
                 ><svg width="89px" height="46px">
-                  <use href="./images/symbol-defs2.svg#icon-client-logo6"></use>
+                  <use
+                    href="./images/symbol-sprite.svg#icon-client-logo6"
+                  ></use>
                 </svg>
               </a>
             </li>
@@ -432,7 +463,7 @@
                 <a class="footer__media-link" href=""
                   ><svg class="footer__media-icon">
                     <use
-                      href="./images/symbol-defs2.svg#icon-footer-instagram"
+                      href="./images/symbol-sprite.svg#icon-footer-instagram"
                     ></use>
                   </svg>
                 </a>
@@ -441,7 +472,7 @@
                 <a class="footer__media-link" href=""
                   ><svg class="footer__media-icon">
                     <use
-                      href="./images/symbol-defs2.svg#icon-footer-twitter"
+                      href="./images/symbol-sprite.svg#icon-footer-twitter"
                     ></use>
                   </svg>
                 </a>
@@ -450,7 +481,7 @@
                 <a class="footer__media-link" href=""
                   ><svg class="footer__media-icon">
                     <use
-                      href="./images/symbol-defs2.svg#icon-footer-facebook"
+                      href="./images/symbol-sprite.svg#icon-footer-facebook"
                     ></use>
                   </svg>
                 </a>
@@ -459,7 +490,7 @@
                 <a class="footer__media-link" href=""
                   ><svg class="footer__media-icon">
                     <use
-                      href="./images/symbol-defs2.svg#icon-footer-linkedin"
+                      href="./images/symbol-sprite.svg#icon-footer-linkedin"
                     ></use>
                   </svg>
                 </a>
@@ -504,7 +535,7 @@
                   id="input-name"
                 />
                 <svg class="main-form__icon" width="18px" height="18px">
-                  <use href="./images/form-defs2.svg#form-icon-name"></use>
+                  <use href="./images/symbol-sprite.svg#form-icon-name"></use>
                 </svg>
               </div>
             </div>
@@ -520,7 +551,7 @@
                   id="input-telephone"
                 />
                 <svg class="main-form__icon" width="18px" height="18px">
-                  <use href="./images/form-defs2.svg#form-icon-phone"></use>
+                  <use href="./images/symbol-sprite.svg#form-icon-phone"></use>
                 </svg>
               </div>
             </div>
@@ -534,7 +565,7 @@
                   id="input-email"
                 />
                 <svg class="main-form__icon" width="18px" height="18px">
-                  <use href="./images/form-defs2.svg#form-icon-email"></use>
+                  <use href="./images/symbol-sprite.svg#form-icon-email"></use>
                 </svg>
               </div>
             </div>
@@ -576,5 +607,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
