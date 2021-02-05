@@ -1,6 +1,11 @@
 .benefits {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop-width) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__title--hidden {
     position: absolute;
@@ -12,11 +17,28 @@
   }
 
   &__list {
-    display: flex;
+    @media screen and (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
   }
 
-  &__item:not(:last-child) {
-    margin-right: 30px;
+  &__item {
+    &:not(:last-child) {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (min-width: $tablet-width) {
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      width: calc((100% - 8 * 15px) / 4);
+    }
   }
 
   &__item::before {
@@ -24,7 +46,7 @@
     margin-bottom: 30px;
     content: "";
     height: 120px;
-    width: 270px;
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-color: getColor("background-light");
@@ -47,6 +69,11 @@
   }
 
   &__subtitle {
+    @media screen and (max-width: 767px) {
+      display: flex;
+      justify-content: center;
+    }
+
     margin-bottom: 10px;
 
     font-weight: getFont("bold");

@@ -1,13 +1,12 @@
 .team {
-  display: block;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   background-color: getColor("background-light");
 
   &__title {
     @extend %page-titles;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   &__subtitle {
@@ -18,11 +17,12 @@
     margin-bottom: 10px;
   }
 
-  &__list {
-    display: flex;
-  }
+  // &__list {
+  //   display: flex;
+  // }
   &__image {
     display: block;
+    width: 100%;
   }
   &__item {
     display: block;
@@ -31,11 +31,11 @@
     border-radius: 0px 0px 4px 4px;
   }
   &__item:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
   &__card {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
     text-align: center;
 
     background-color: getColor("main-background");

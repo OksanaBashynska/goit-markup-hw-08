@@ -1,7 +1,31 @@
 .footer {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  @media screen and (max-width: $desktop-width) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
+
+  &__block {
+    @media screen and (max-width: $desktop-width) {
+      &:not(:last-child) {
+        margin-bottom: 60px;
+      }
+    }
+    @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+      &:first-child {
+        margin-right: 165px;
+      }
+    }
+  }
 
   &__title {
     text-transform: uppercase;
@@ -28,6 +52,7 @@
 
   &__media {
     display: flex;
+    justify-content: center;
   }
 
   &__media-item:not(:last-child) {

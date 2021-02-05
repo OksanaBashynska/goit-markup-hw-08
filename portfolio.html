@@ -10,7 +10,7 @@
   <body>
     <!--Шапка-->
 
-    <header>
+    <header class="page-header">
       <div class="container page-header__container">
         <p class="logo page-header__logo">
           <span class="logo__Web">Web</span>Studio
@@ -34,9 +34,21 @@
 
           <ul class="page-header__contacts">
             <li class="page-header__contacts-item">
+              <a href="tel:+380961111111" class="page-header__contacts-link"
+                ><svg
+                  class="page-header__contacts-icon page-header__contacts-icon--phone"
+                  width="10px"
+                  height="16px"
+                >
+                  <use href="./images/symbol-sprite.svg#icon-phone-icon"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="page-header__contacts-item">
               <a
                 href="mailto:info@devstudio.com"
-                class="page-header__contacts-link"
+                class="page-header__contacts-link page-header__contacts-link--email"
               >
                 <svg
                   class="page-header__contacts-icon page-header__contacts-icon--email"
@@ -48,17 +60,25 @@
                 info@devstudio.com
               </a>
             </li>
-            <li class="page-header__contacts-item">
-              <a href="tel:+380961111111" class="page-header__contacts-link"
-                ><svg
-                  class="page-header__contacts-icon page-header__contacts-icon--phone"
-                  width="10px"
-                  height="16px"
-                >
-                  <use href="./images/symbol-sprite.svg#icon-phone-icon"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
+          </ul>
+          <ul class="page-header__media-list">
+            <li class="page-header__media-item">
+              <a href="" class="page-header__media-link"
+                >Instagram<span class="page-header__media-sign">|</span></a
+              >
+            </li>
+            <li class="page-header__media-item">
+              <a href="" class="page-header__media-link"
+                >Twitter<span class="page-header__media-sign">|</span></a
+              >
+            </li>
+            <li class="page-header__media-item">
+              <a href="" class="page-header__media-link"
+                >Facebook<span class="page-header__media-sign">|</span></a
+              >
+            </li>
+            <li class="page-header__media-item">
+              <a href="" class="page-header__media-link">LinkedIn</a>
             </li>
           </ul>
         </nav>

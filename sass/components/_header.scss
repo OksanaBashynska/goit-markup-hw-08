@@ -1,6 +1,6 @@
 .page-header {
   position: relative;
-  border-bottom: #ececec;
+  border-bottom: 1px solid #ececec;
 
   &__container {
     display: flex;
@@ -55,12 +55,7 @@
   }
 
   &__menu-container {
-    padding: 48px 40px;
     background-color: getColor("main-background");
-
-    &.is-open {
-      display: block;
-    }
 
     @media screen and (max-width: 767px) {
       display: none;
@@ -68,6 +63,12 @@
       top: 0;
       left: 0;
       width: 100%;
+
+      padding: 48px 40px;
+
+      &.is-open {
+        display: block;
+      }
     }
   }
 
@@ -136,8 +137,6 @@
   }
 
   &__contacts-link {
-    display: inline-flex;
-
     font-size: 34px;
     line-height: 1.17;
     color: getColor("primary");
@@ -160,6 +159,10 @@
 
   &__media-list {
     display: flex;
+
+    @media screen and (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   &__media-sign {
