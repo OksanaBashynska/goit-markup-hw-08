@@ -14,7 +14,7 @@
   }
 
   &__title {
-    @extend %page-titles--mobile;
+    @extend %page-titles;
     margin-bottom: 30px;
 
     @media screen and (min-width: $desktop-width) {

@@ -47,7 +47,9 @@
                   width="16px"
                   height="12px"
                 >
-                  <use href="./images/symbol-sprite.svg#icon-email-icon"></use>
+                  <use
+                    href="./images/svg/symbol-sprite.svg#icon-email-icon"
+                  ></use>
                 </svg>
                 info@devstudio.com
               </a>
@@ -59,7 +61,9 @@
                   width="10px"
                   height="16px"
                 >
-                  <use href="./images/symbol-sprite.svg#icon-phone-icon"></use>
+                  <use
+                    href="./images/svg/symbol-sprite.svg#icon-phone-icon"
+                  ></use>
                 </svg>
                 +38 096 111 11 11
               </a>
@@ -100,11 +104,11 @@
           >
             <use
               class="page-header__icon-cross"
-              href="../images/symbol-sprite.svg#close-icon"
+              href="../images/svg/symbol-sprite.svg#close-icon"
             ></use>
             <use
               class="page-header__icon-menu"
-              href="../images/symbol-sprite.svg#menu-icon"
+              href="../images/svg/symbol-sprite.svg#menu-icon"
             ></use>
           </svg>
         </button>
@@ -114,11 +118,11 @@
     <!--Основной контент-->
     <main>
       <!--секция1 заказать услугу-->
-      <section class="order section">
-        <div class="overlay">
-          <div class="order__title-container">
-            <h1 class="order__title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="order__button" data-modal-open>
+      <section class="hero section">
+        <div class="hero__overlay">
+          <div class="hero__title-container">
+            <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+            <button type="button" class="hero__button" data-modal-open>
               Заказать услугу
             </button>
           </div>
@@ -170,30 +174,69 @@
           <h2 class="offer__title">Чем мы занимаемся</h2>
           <ul class="offer__list">
             <li class="offer__item">
-              <img
-                class="offer__image"
-                src="./images/jpg/about-us1.jpg"
-                alt="Человек печатает на компьютере с планшета"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/offer-section/about-us1-300.webp 1x,
+                    ./images/offer-section/about-us1-600.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/offer-section/about-us1-300.jpg 1x,
+                    ./images/offer-section/about-us1-600.jpg 2x
+                  "
+                  class="offer__image"
+                  src="./images/offer-section/about-us1-300.jpg"
+                  alt="Человек печатает на компьютере с планшета"
+                  width="370"
+                />
+              </picture>
               <p class="offer__text">Десктопные приложения</p>
             </li>
             <li class="offer__item">
-              <img
-                class="offer__image"
-                src="./images/jpg/about-us2.jpg"
-                alt="Человек печатает на компьютере и смотрит в телефон"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/offer-section/about-us2-300.webp 1x,
+                    ./images/offer-section/about-us2-600.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/offer-section/about-us2-300.jpg 1x,
+                    ./images/offer-section/about-us2-600.jpg 2x
+                  "
+                  class="offer__image"
+                  src="./images/offer-section/about-us2-300.jpg"
+                  alt="Человек печатает на компьютере и смотрит в телефон"
+                  width="370"
+                />
+              </picture>
               <p class="offer__text">Мобильные приложения</p>
             </li>
             <li class="offer__item">
-              <img
-                class="offer__image"
-                src="./images/jpg/about-us3.jpg"
-                alt="Человек выбирает цветовую гамму на планшете"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/offer-section/about-us3-300.webp 1x,
+                    ./images/offer-section/about-us3-600.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/offer-section/about-us3-300.jpg 1x,
+                    ./images/offer-section/about-us3-600.jpg 2x
+                  "
+                  class="offer__image"
+                  src="./images/offer-section/about-us3-300.jpg"
+                  alt="Человек выбирает цветовую гамму на планшете"
+                  width="370"
+                />
+              </picture>
               <p class="offer__text">Дизайнерские решения</p>
             </li>
           </ul>
@@ -206,160 +249,212 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                src="./images/jpg/team1.jpg"
-                alt="Улыбающийся мужчина"
-                width="270"
-                class="team__image"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-section/team-igor-300.webp 1x,
+                    ./images/team-section/team-igor-600.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/team-section/team-igor-300.jpg 1x,
+                    ./images/team-section/team-igor-600.jpg 2x
+                  "
+                  src="./images/team-section/team-igor-600.jpg"
+                  alt="Улыбающийся мужчина"
+                  width="450"
+                  class="team__image"
+                />
+              </picture>
               <div class="team__card">
                 <h3 class="team__subtitle">Игорь Демьяненко</h3>
                 <p class="team__text">Product Designer</p>
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-sprite.svg#icon-team-instagram"
+                      href="./images/svg/symbol-sprite.svg#icon-team-instagram"
                     ></use>
                   </svg>
                 </a>
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-sprite.svg#icon-team-twitter"
+                      href="./images/svg/symbol-sprite.svg#icon-team-twitter"
                     ></use>
                   </svg>
                 </a>
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-sprite.svg#icon-team-facebook"
+                      href="./images/svg/symbol-sprite.svg#icon-team-facebook"
                     ></use>
                   </svg>
                 </a>
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-sprite.svg#icon-team-linkedin"
+                      href="./images/svg/symbol-sprite.svg#icon-team-linkedin"
                     ></use>
                   </svg>
                 </a>
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/jpg/team2.jpg"
-                alt="Улыбающаяся женщина"
-                width="270"
-                class="team__image"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-section/team-olga-300.webp 1x,
+                    ./images/team-section/team-olga-600.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/team-section/team-olga-300.jpg 1x,
+                    ./images/team-section/team-olga-600.jpg 2x
+                  "
+                  src="./images/team-section/team-olga-600.jpg"
+                  alt="Улыбающаяся женщина"
+                  width="450"
+                  class="team__image"
+                />
+              </picture>
               <div class="team__card">
                 <h3 class="team__subtitle">Ольга Репина</h3>
                 <p class="team__text">Frontend Developer</p>
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-sprite.svg#icon-team-instagram"
+                      href="./images/svg/symbol-sprite.svg#icon-team-instagram"
                     ></use>
                   </svg>
                 </a>
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-sprite.svg#icon-team-twitter"
+                      href="./images/svg/symbol-sprite.svg#icon-team-twitter"
                     ></use>
                   </svg>
                 </a>
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-sprite.svg#icon-team-facebook"
+                      href="./images/svg/symbol-sprite.svg#icon-team-facebook"
                     ></use>
                   </svg>
                 </a>
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-sprite.svg#icon-team-linkedin"
+                      href="./images/svg/symbol-sprite.svg#icon-team-linkedin"
                     ></use>
                   </svg>
                 </a>
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/jpg/team3.jpg"
-                alt="Улыбающийся мужчина"
-                width="270"
-                class="team__image"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-section/team-nikolaj-300.webp 1x,
+                    ./images/team-section/team-nikolaj-600.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/team-section/team-nikolaj-300.jpg 1x,
+                    ./images/team-section/team-nikolaj-600.jpg 2x
+                  "
+                  src="./images/team-section/team-nikolaj-600.jpg"
+                  alt="Улыбающийся мужчина"
+                  width="450"
+                  class="team__image"
+                />
+              </picture>
               <div class="team__card">
                 <h3 class="team__subtitle">Николай Тарасов</h3>
                 <p class="team__text">Marketing</p>
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-sprite.svg#icon-team-instagram"
+                      href="./images/svg/symbol-sprite.svg#icon-team-instagram"
                     ></use>
                   </svg>
                 </a>
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-sprite.svg#icon-team-twitter"
+                      href="./images/svg/symbol-sprite.svg#icon-team-twitter"
                     ></use>
                   </svg>
                 </a>
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-sprite.svg#icon-team-facebook"
+                      href="./images/svg/symbol-sprite.svg#icon-team-facebook"
                     ></use>
                   </svg>
                 </a>
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-sprite.svg#icon-team-linkedin"
+                      href="./images/svg/symbol-sprite.svg#icon-team-linkedin"
                     ></use>
                   </svg>
                 </a>
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/jpg/team4.jpg"
-                alt="Улыбающийся мужчина"
-                width="270"
-                class="team__image"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-section/team-mihail-300.webp 1x,
+                    ./images/team-section/team-mihail-600.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/team-section/team-mihail-300.jpg 1x,
+                    ./images/team-section/team-mihail-600.jpg 2x
+                  "
+                  src="./images/team-section/team-mihail-600.jpg"
+                  alt="Улыбающийся мужчина"
+                  width="450"
+                  class="team__image"
+                />
+              </picture>
               <div class="team__card">
                 <h3 class="team__subtitle">Михаил Ермаков</h3>
                 <p class="team__text">UI Designer</p>
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-sprite.svg#icon-team-instagram"
+                      href="./images/svg/symbol-sprite.svg#icon-team-instagram"
                     ></use>
                   </svg>
                 </a>
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-sprite.svg#icon-team-twitter"
+                      href="./images/svg/symbol-sprite.svg#icon-team-twitter"
                     ></use>
                   </svg>
                 </a>
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-sprite.svg#icon-team-facebook"
+                      href="./images/svg/symbol-sprite.svg#icon-team-facebook"
                     ></use>
                   </svg>
                 </a>
                 <a class="team__media-link" href=""
                   ><svg class="team__media-icon">
                     <use
-                      href="./images/symbol-sprite.svg#icon-team-linkedin"
+                      href="./images/svg/symbol-sprite.svg#icon-team-linkedin"
                     ></use>
                   </svg>
                 </a>
@@ -378,7 +473,7 @@
               <a href="" class="clients__logo-link"
                 ><svg width="44px" height="49px">
                   <use
-                    href="./images/symbol-sprite.svg#icon-client-logo1"
+                    href="./images/svg/symbol-sprite.svg#icon-client-logo1"
                   ></use>
                 </svg>
               </a>
@@ -387,7 +482,7 @@
               <a href="" class="clients__logo-link"
                 ><svg width="40px" height="52px">
                   <use
-                    href="./images/symbol-sprite.svg#icon-client-logo2"
+                    href="./images/svg/symbol-sprite.svg#icon-client-logo2"
                   ></use>
                 </svg>
               </a>
@@ -396,7 +491,7 @@
               <a href="" class="clients__logo-link"
                 ><svg width="41px" height="43px">
                   <use
-                    href="./images/symbol-sprite.svg#icon-client-logo3"
+                    href="./images/svg/symbol-sprite.svg#icon-client-logo3"
                   ></use>
                 </svg>
               </a>
@@ -405,7 +500,7 @@
               <a href="" class="clients__logo-link"
                 ><svg width="80px" height="42px">
                   <use
-                    href="./images/symbol-sprite.svg#icon-client-logo4"
+                    href="./images/svg/symbol-sprite.svg#icon-client-logo4"
                   ></use>
                 </svg>
               </a>
@@ -414,7 +509,7 @@
               <a href="" class="clients__logo-link"
                 ><svg width="59px" height="47px">
                   <use
-                    href="./images/symbol-sprite.svg#icon-client-logo5"
+                    href="./images/svg/symbol-sprite.svg#icon-client-logo5"
                   ></use>
                 </svg>
               </a>
@@ -423,7 +518,7 @@
               <a href="" class="clients__logo-link"
                 ><svg width="89px" height="46px">
                   <use
-                    href="./images/symbol-sprite.svg#icon-client-logo6"
+                    href="./images/svg/symbol-sprite.svg#icon-client-logo6"
                   ></use>
                 </svg>
               </a>
@@ -465,7 +560,7 @@
                 <a class="footer__media-link" href=""
                   ><svg class="footer__media-icon">
                     <use
-                      href="./images/symbol-sprite.svg#icon-footer-instagram"
+                      href="./images/svg/symbol-sprite.svg#icon-footer-instagram"
                     ></use>
                   </svg>
                 </a>
@@ -474,7 +569,7 @@
                 <a class="footer__media-link" href=""
                   ><svg class="footer__media-icon">
                     <use
-                      href="./images/symbol-sprite.svg#icon-footer-twitter"
+                      href="./images/svg/symbol-sprite.svg#icon-footer-twitter"
                     ></use>
                   </svg>
                 </a>
@@ -483,7 +578,7 @@
                 <a class="footer__media-link" href=""
                   ><svg class="footer__media-icon">
                     <use
-                      href="./images/symbol-sprite.svg#icon-footer-facebook"
+                      href="./images/svg/symbol-sprite.svg#icon-footer-facebook"
                     ></use>
                   </svg>
                 </a>
@@ -492,7 +587,7 @@
                 <a class="footer__media-link" href=""
                   ><svg class="footer__media-icon">
                     <use
-                      href="./images/symbol-sprite.svg#icon-footer-linkedin"
+                      href="./images/svg/symbol-sprite.svg#icon-footer-linkedin"
                     ></use>
                   </svg>
                 </a>
@@ -537,7 +632,9 @@
                   id="input-name"
                 />
                 <svg class="main-form__icon" width="18px" height="18px">
-                  <use href="./images/symbol-sprite.svg#form-icon-name"></use>
+                  <use
+                    href="./images/svg/symbol-sprite.svg#form-icon-name"
+                  ></use>
                 </svg>
               </div>
             </div>
@@ -553,7 +650,9 @@
                   id="input-telephone"
                 />
                 <svg class="main-form__icon" width="18px" height="18px">
-                  <use href="./images/symbol-sprite.svg#form-icon-phone"></use>
+                  <use
+                    href="./images/svg/symbol-sprite.svg#form-icon-phone"
+                  ></use>
                 </svg>
               </div>
             </div>
@@ -567,7 +666,9 @@
                   id="input-email"
                 />
                 <svg class="main-form__icon" width="18px" height="18px">
-                  <use href="./images/symbol-sprite.svg#form-icon-email"></use>
+                  <use
+                    href="./images/svg/symbol-sprite.svg#form-icon-email"
+                  ></use>
                 </svg>
               </div>
             </div>
