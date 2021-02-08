@@ -3,9 +3,12 @@
   padding: 0;
 
   &__title-container {
-    //  width: 696px;
     margin: auto;
-    max-width: 360px;
+    width: 360px;
+
+    @media screen and (min-width: $desktop-width) {
+      width: 696px;
+    }
   }
   &__title {
     font-weight: 900;
@@ -14,6 +17,11 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: getColor("secondary");
+
+    @media screen and (min-width: $desktop-width) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
   &__button {
     @extend %button;

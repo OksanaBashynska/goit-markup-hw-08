@@ -14,10 +14,12 @@
   }
 
   &__title {
-    @extend %page-titles;
+    @extend %page-titles--mobile;
     margin-bottom: 30px;
 
     @media screen and (min-width: $desktop-width) {
+      font-size: getFont("title-size");
+      line-height: 1.16;
       margin-bottom: 50px;
     }
   }

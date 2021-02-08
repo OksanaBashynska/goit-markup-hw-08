@@ -7,9 +7,13 @@
 
     font-weight: getFont("bold");
     font-size: 20px;
-    line-height: 1.17;
+    line-height: 1.5;
     text-align: center;
     color: getColor("title");
+
+    @media screen and (min-width: $desktop-width) {
+      line-height: 1.17;
+    }
   }
 
   &__label-container {
@@ -22,8 +26,9 @@
     &--mailing {
       position: relative;
       display: flex;
+      align-items: center;
       margin-bottom: 30px;
-      padding-left: 25px;
+      padding-left: 24px;
     }
   }
   &__icon-container {
@@ -44,9 +49,11 @@
     line-height: 1.16;
     color: getColor("primary");
 
-    &--mailing {
-      font-size: getFont("base-size");
-      line-height: 1.7;
+    @media screen and (min-width: $desktop-width) {
+      &--mailing {
+        font-size: getFont("base-size");
+        line-height: 1.7;
+      }
     }
   }
 
@@ -93,10 +100,17 @@
   }
 
   &__link {
-    margin-left: 4px;
+    font-size: 12px;
+    margin-left: 3px;
     color: getColor("accent");
     text-decoration-line: underline;
+
+    @media screen and (min-width: $desktop-width) {
+      font-size: 14px;
+      margin-left: 5px;
+    }
   }
+
   &__checkbox {
     @extend %hidden;
 

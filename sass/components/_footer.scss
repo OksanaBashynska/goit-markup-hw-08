@@ -1,5 +1,5 @@
 .footer {
-  @media screen and (max-width: $desktop-width) {
+  @media screen and (max-width: 1599px) {
     text-align: center;
   }
 
@@ -15,12 +15,12 @@
   }
 
   &__block {
-    @media screen and (max-width: $desktop-width) {
+    @media screen and (max-width: 1599px) {
       &:not(:last-child) {
         margin-bottom: 60px;
       }
     }
-    @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @media screen and (min-width: $tablet-width) and (max-width: 1599px) {
       &:first-child {
         margin-right: 165px;
       }

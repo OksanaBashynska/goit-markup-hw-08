@@ -4,9 +4,20 @@
 
   background-color: getColor("background-light");
 
+  @media screen and (min-width: $desktop-width) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
   &__title {
-    @extend %page-titles;
+    @extend %page-titles--mobile;
     margin-bottom: 30px;
+
+    @media screen and (min-width: $desktop-width) {
+      font-size: getFont("title-size");
+      line-height: 1.16;
+      margin-bottom: 50px;
+    }
   }
 
   &__subtitle {
@@ -17,22 +28,41 @@
     margin-bottom: 10px;
   }
 
-  // &__list {
-  //   display: flex;
-  // }
-  &__image {
-    display: block;
-    width: 100%;
+  &__list {
+    @media screen and (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
   }
+
   &__item {
     display: block;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (min-width: $tablet-width) {
+      width: calc((100% - 15px * 4) / 2);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      width: calc((100% - 15px * 8) / 4);
+    }
   }
-  &__item:not(:last-child) {
-    margin-bottom: 30px;
+
+  &__image {
+    display: block;
+    width: 100%;
   }
+
   &__card {
     padding-top: 30px;
     padding-bottom: 24px;

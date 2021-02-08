@@ -14,10 +14,10 @@
   }
 }
 
-%page-titles {
+%page-titles--mobile {
   font-weight: getFont("bold");
-  font-size: getFont("title-size");
-  line-height: 1.16;
+  font-size: getFont("title-mobile-size");
+  line-height: getFont("base-line-height");
   text-align: center;
   color: getColor("title");
 }

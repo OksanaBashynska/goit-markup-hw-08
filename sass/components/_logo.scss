@@ -6,6 +6,16 @@
   color: getColor("title");
 }
 
+.page-header__logo {
+  @media screen and (min-width: $tablet-width) {
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-right: 93px;
+  }
+}
+
 .logo__Web {
   color: getColor("accent");
 }
