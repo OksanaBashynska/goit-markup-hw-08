@@ -15,7 +15,7 @@
         <p class="logo page-header__logo">
           <span class="logo__Web">Web</span>Studio
         </p>
-        <nav class="page-header__menu-container" id="menu-container" data-menu>
+        <nav class="page-header__nav-container">
           <ul class="page-header__navigation">
             <li class="page-header__item">
               <a href="./index.html" class="page-header__link">Студия </a>
@@ -33,7 +33,9 @@
           </ul>
 
           <ul class="page-header__contacts">
-            <li class="page-header__contacts-item">
+            <li
+              class="page-header__contacts-item page-header__contacts-item--email"
+            >
               <a
                 href="mailto:info@devstudio.com"
                 class="page-header__contacts-link page-header__contacts-link--email"
@@ -63,26 +65,6 @@
                 </svg>
                 +38 096 111 11 11
               </a>
-            </li>
-          </ul>
-          <ul class="page-header__media-list">
-            <li class="page-header__media-item">
-              <a href="" class="page-header__media-link"
-                >Instagram<span class="page-header__media-sign">|</span></a
-              >
-            </li>
-            <li class="page-header__media-item">
-              <a href="" class="page-header__media-link"
-                >Twitter<span class="page-header__media-sign">|</span></a
-              >
-            </li>
-            <li class="page-header__media-item">
-              <a href="" class="page-header__media-link"
-                >Facebook<span class="page-header__media-sign">|</span></a
-              >
-            </li>
-            <li class="page-header__media-item">
-              <a href="" class="page-header__media-link">LinkedIn</a>
             </li>
           </ul>
         </nav>
@@ -534,6 +516,59 @@
         </div>
       </div>
     </footer>
+
+    <div class="mobile-header">
+      <nav class="mobile-header__menu-container" id="menu-container" data-menu>
+        <ul class="mobile-header__navigation">
+          <li class="mobile-header__item">
+            <a href="./index.html" class="mobile-header__link">Студия </a>
+          </li>
+          <li class="mobile-header__item">
+            <a
+              href="./portfolio.html"
+              class="mobile-header__link mobile-header__link--current"
+              >Портфолио
+            </a>
+          </li>
+          <li class="mobile-header__item">
+            <a href="" class="mobile-header__link">Контакты </a>
+          </li>
+        </ul>
+
+        <ul class="mobile-header__contacts">
+          <li class="mobile-header__contacts-item">
+            <a href="tel:+380961111111" class="mobile-header__contacts-link">
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li
+            class="mobile-header__contacts-item mobile-header__contacts-item--email"
+          >
+            <a
+              href="mailto:info@devstudio.com"
+              class="mobile-header__contacts-link mobile-header__contacts-link--email"
+            >
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="mobile-header__media-list">
+          <li class="mobile-header__media-item">
+            <a href="" class="mobile-header__media-link">Instagram</a>
+          </li>
+          <li class="mobile-header__media-item">
+            <a href="" class="mobile-header__media-link">Twitter</a>
+          </li>
+          <li class="mobile-header__media-item">
+            <a href="" class="mobile-header__media-link">Facebook</a>
+          </li>
+          <li class="mobile-header__media-item">
+            <a href="" class="mobile-header__media-link">LinkedIn</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
     <script src="./js/menu.js"></script>
   </body>
 </html>
