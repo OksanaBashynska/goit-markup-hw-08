@@ -942,6 +942,7 @@ address {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  z-index: 4;
   -webkit-transition-property: opacity;
   transition-property: opacity;
   -webkit-transition-duration: 250ms;
@@ -1452,6 +1453,7 @@ address {
 .team__image {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 .team__card {
