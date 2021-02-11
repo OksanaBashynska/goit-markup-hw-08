@@ -449,12 +449,6 @@ address {
 }
 
 .page-header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: 60px;
   font-weight: 500;
   font-size: 14px;
@@ -465,6 +459,12 @@ address {
 
 @media screen and (min-width: 768px) {
   .page-header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 80px;
   }
 }
@@ -707,9 +707,6 @@ address {
 }
 
 .mobile-header__link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
@@ -732,7 +729,7 @@ address {
 }
 
 .mobile-header__contacts-link {
-  font-size: 34px;
+  font-size: 24px;
   line-height: 1.17;
   color: #757575;
   -webkit-transition-property: color;
@@ -743,17 +740,24 @@ address {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 380px) {
+  .mobile-header__contacts-link {
+    font-size: 22px;
+  }
+}
+
 .mobile-header__contacts-link:hover, .mobile-header__contacts-link:focus {
   color: #2196f3;
 }
 
-.mobile-header__contacts-link--email {
-  font-size: 24px;
+.mobile-header__contacts-link--phone {
+  font-size: 34px;
+  color: #2196f3;
 }
 
-@media screen and (min-width: 768px) {
-  .mobile-header__media-list {
-    display: none;
+@media screen and (max-width: 380px) {
+  .mobile-header__contacts-link--phone {
+    font-size: 27px;
   }
 }
 
@@ -788,12 +792,31 @@ address {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 381px) {
+  .mobile-header__media-link {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 382px) and (max-width: 448px) {
+  .mobile-header__media-link {
+    font-size: 14px;
+  }
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: #212121;
+}
+
+@media screen and (max-width: 767px) {
+  .page-header__logo {
+    display: inline-block;
+    margin-top: 16px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -824,12 +847,13 @@ address {
 
 .hero__title-container {
   margin: auto;
-  width: 360px;
+  max-width: 360px;
+  width: 100%;
 }
 
 @media screen and (min-width: 1200px) {
   .hero__title-container {
-    width: 696px;
+    max-width: 696px;
   }
 }
 
@@ -946,7 +970,8 @@ address {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 40px;
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
   height: 609px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -966,7 +991,7 @@ address {
 
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
     height: 581px;
   }
 }
@@ -1579,8 +1604,10 @@ address {
   background-color: #f5f4fa;
   border: none;
   cursor: pointer;
-  -webkit-transition-property: color, background-color;
-  transition-property: color, background-color;
+  -webkit-transition-property: color, background-color, -webkit-box-shadow;
+  transition-property: color, background-color, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow;
+  transition-property: color, background-color, box-shadow, -webkit-box-shadow;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

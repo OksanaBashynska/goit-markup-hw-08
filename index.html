@@ -100,7 +100,12 @@
         <div class="hero__overlay">
           <div class="hero__title-container">
             <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="hero__button" data-modal-open>
+            <button
+              type="button"
+              class="hero__button"
+              id="show"
+              data-modal-open
+            >
               Заказать услугу
             </button>
           </div>
@@ -593,7 +598,7 @@
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
+      <div class="modal" id="dialog">
         <div class="modal__icon" data-modal-close>&#10006;</div>
         <div class="modal__container">
           <form class="main-form" autocomplete="off">
@@ -709,7 +714,10 @@
 
         <ul class="mobile-header__contacts">
           <li class="mobile-header__contacts-item">
-            <a href="tel:+380961111111" class="mobile-header__contacts-link">
+            <a
+              href="tel:+380961111111"
+              class="mobile-header__contacts-link mobile-header__contacts-link--phone"
+            >
               +38 096 111 11 11
             </a>
           </li>
@@ -741,6 +749,7 @@
       </nav>
     </div>
 
+    <script src="./js/scroll.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
   </body>

@@ -33,10 +33,6 @@
   }
 
   &__link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
     @include transition(color);
 
     &:hover,
@@ -57,9 +53,13 @@
   }
 
   &__contacts-link {
-    font-size: 34px;
+    font-size: 24px;
     line-height: 1.17;
     color: getColor("primary");
+
+    @media screen and (max-width: 380px) {
+      font-size: 22px;
+    }
 
     @include transition(color);
 
@@ -68,14 +68,13 @@
       color: getColor("accent");
     }
 
-    &--email {
-      font-size: 24px;
-    }
-  }
+    &--phone {
+      font-size: 34px;
+      color: getColor("accent");
 
-  &__media-list {
-    @media screen and (min-width: $tablet-width) {
-      display: none;
+      @media screen and (max-width: 380px) {
+        font-size: 27px;
+      }
     }
   }
 
@@ -111,5 +110,13 @@
     letter-spacing: 0.02em;
     color: getColor("accent");
     text-decoration: underline;
+
+    @media screen and (max-width: 381px) {
+      font-size: 10px;
+    }
+
+    @media screen and (min-width: 382px) and (max-width: 448px) {
+      font-size: 14px;
+    }
   }
 }

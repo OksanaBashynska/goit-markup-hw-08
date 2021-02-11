@@ -24,7 +24,7 @@
   &__button-item:not(:last-child) {
     margin-right: 8px;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $tablet-width - 1px) {
       &:nth-child(-n + 3) {
         margin-bottom: 15px;
       }
@@ -44,7 +44,7 @@
     border: none;
     cursor: pointer;
 
-    transition-property: color, background-color;
+    transition-property: color, background-color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -66,7 +66,7 @@
   }
 
   &__card-item {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $tablet-width - 1px) {
       &:not(:last-child) {
         margin-bottom: 30px;
       }
