@@ -82,11 +82,11 @@
           >
             <use
               class="page-header__icon-cross"
-              href="../images/svg/symbol-sprite.svg#close-icon"
+              href="./images/svg/header-menu.svg#icon-close"
             ></use>
             <use
               class="page-header__icon-menu"
-              href="../images/svg/symbol-sprite.svg#menu-icon"
+              href="./images/svg/header-menu.svg#icon-menu"
             ></use>
           </svg>
         </button>
@@ -100,12 +100,7 @@
         <div class="hero__overlay">
           <div class="hero__title-container">
             <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-            <button
-              type="button"
-              class="hero__button"
-              id="show"
-              data-modal-open
-            >
+            <button type="button" class="hero__button" data-modal-open>
               Заказать услугу
             </button>
           </div>
@@ -598,7 +593,7 @@
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal" id="dialog">
+      <div class="modal">
         <div class="modal__icon" data-modal-close>&#10006;</div>
         <div class="modal__container">
           <form class="main-form" autocomplete="off">
@@ -749,7 +744,6 @@
       </nav>
     </div>
 
-    <script src="./js/scroll.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
   </body>
